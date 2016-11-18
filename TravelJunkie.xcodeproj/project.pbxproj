@@ -10,6 +10,7 @@
 		2F12E5291DD24B7100CC3B2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12E5281DD24B7100CC3B2F /* MapKit.framework */; };
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
+		2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */; };
 		2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */; };
 		2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC081DC6BEDB00D94678 /* ViewController.swift */; };
 		2FA2FC0C1DC6BEDD00D94678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FA2FC0A1DC6BEDD00D94678 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		2F12E5281DD24B7100CC3B2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2FA2FC031DC6BEDA00D94678 /* TravelJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA2FC081DC6BEDB00D94678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */,
 				2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */,
 				2FA2FC081DC6BEDB00D94678 /* ViewController.swift */,
+				2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */,
 				2FA2FC0A1DC6BEDD00D94678 /* Main.storyboard */,
 				2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */,
 				2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */,
@@ -286,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */,
 				2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */,
 				2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */,
 				2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */,

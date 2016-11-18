@@ -130,7 +130,7 @@ extension MapViewController : MKMapViewDelegate {
         let reuseId = "pin"
         guard let pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView else { return nil }
         
-        pinView.pinTintColor = UIColor.orange
+        pinView.pinTintColor = UIColor.yellow
         pinView.canShowCallout = true
         let smallSquare = CGSize(width: 30, height: 30)
         var button: UIButton?
