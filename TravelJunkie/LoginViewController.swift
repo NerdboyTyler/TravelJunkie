@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passField: UITextField!
@@ -67,6 +67,12 @@ class LoginViewController: UIViewController {
         }
         
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 

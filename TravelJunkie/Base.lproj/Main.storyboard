@@ -389,7 +389,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fd1-bH-D88">
-                                <rect key="frame" x="133" y="171" width="55" height="30"/>
+                                <rect key="frame" x="133" y="356" width="55" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="tRt-ZI-rsy"/>
                                 </constraints>
@@ -401,7 +401,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k49-Yh-lqP">
-                                <rect key="frame" x="141" y="133" width="38" height="30"/>
+                                <rect key="frame" x="141" y="318" width="38" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="HqI-X9-fod"/>
                                 </constraints>
@@ -413,7 +413,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o9v-2T-9UT">
-                                <rect key="frame" x="16" y="57" width="288" height="30"/>
+                                <rect key="frame" x="16" y="242" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="13b-j8-Lnf"/>
                                 </constraints>
@@ -422,7 +422,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SRa-6r-pjw">
-                                <rect key="frame" x="16" y="95" width="288" height="30"/>
+                                <rect key="frame" x="16" y="280" width="288" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="288" id="4ks-p3-clw"/>
                                 </constraints>
@@ -430,6 +430,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeImage.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="KLN-8t-LGe">
+                                <rect key="frame" x="40" y="57" width="240" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="0ij-PT-65d"/>
+                                    <constraint firstAttribute="width" constant="240" id="OUm-oj-Hl9"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.23400957110000001" green="0.79987046630000003" blue="0.61357625090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -438,9 +445,11 @@
                             <constraint firstItem="fd1-bH-D88" firstAttribute="top" secondItem="k49-Yh-lqP" secondAttribute="bottom" constant="8" id="DvA-L8-CEp"/>
                             <constraint firstItem="mAr-a3-Xd3" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="Kx7-c4-kwH"/>
                             <constraint firstItem="o9v-2T-9UT" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="TbK-cG-HqA"/>
+                            <constraint firstItem="KLN-8t-LGe" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="Vpm-wv-11T"/>
                             <constraint firstItem="mAr-a3-Xd3" firstAttribute="top" secondItem="LOf-5y-tjv" secondAttribute="bottom" constant="8" id="WCc-RS-wOH"/>
                             <constraint firstItem="fd1-bH-D88" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="dXE-Im-lmj"/>
-                            <constraint firstItem="o9v-2T-9UT" firstAttribute="top" secondItem="mAr-a3-Xd3" secondAttribute="bottom" constant="8" id="gMZ-xj-PFU"/>
+                            <constraint firstItem="o9v-2T-9UT" firstAttribute="top" secondItem="mAr-a3-Xd3" secondAttribute="bottom" constant="193" id="gMZ-xj-PFU"/>
+                            <constraint firstItem="KLN-8t-LGe" firstAttribute="top" secondItem="mAr-a3-Xd3" secondAttribute="bottom" constant="8" id="iXH-uC-ry1"/>
                             <constraint firstItem="k49-Yh-lqP" firstAttribute="top" secondItem="SRa-6r-pjw" secondAttribute="bottom" constant="8" id="k9o-pR-7No"/>
                             <constraint firstItem="SRa-6r-pjw" firstAttribute="top" secondItem="o9v-2T-9UT" secondAttribute="bottom" constant="8" id="sin-pR-ZDM"/>
                         </constraints>
@@ -618,10 +627,11 @@
     </scenes>
     <resources>
         <image name="fiveStar.PNG" width="284" height="40"/>
+        <image name="homeImage.PNG" width="251" height="305"/>
         <image name="star.PNG" width="29" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="dmo-G0-map"/>
-        <segue reference="M3Z-YZ-eeO"/>
+        <segue reference="god-ut-lJv"/>
     </inferredMetricsTieBreakers>
 </document>

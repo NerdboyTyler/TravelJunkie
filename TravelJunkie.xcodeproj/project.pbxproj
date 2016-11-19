@@ -17,6 +17,7 @@
 		2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E41DE000E6001157C6 /* twoStar.PNG */; };
 		2F03B4EB1DE0168B001157C6 /* star.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4EA1DE0168B001157C6 /* star.PNG */; };
 		2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4EC1DE01759001157C6 /* NewViewController.swift */; };
+		2F03B4EF1DE02979001157C6 /* homeImage.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4EE1DE02979001157C6 /* homeImage.PNG */; };
 		2F12E5291DD24B7100CC3B2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12E5281DD24B7100CC3B2F /* MapKit.framework */; };
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
@@ -61,6 +62,7 @@
 		2F03B4E41DE000E6001157C6 /* twoStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twoStar.PNG; sourceTree = "<group>"; };
 		2F03B4EA1DE0168B001157C6 /* star.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.PNG; sourceTree = "<group>"; };
 		2F03B4EC1DE01759001157C6 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		2F03B4EE1DE02979001157C6 /* homeImage.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homeImage.PNG; sourceTree = "<group>"; };
 		2F12E5281DD24B7100CC3B2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				2FA2FC121DC6BEE200D94678 /* LaunchScreen.storyboard */,
 				2FA2FC151DC6BEE300D94678 /* Info.plist */,
 				2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */,
+				2F03B4EE1DE02979001157C6 /* homeImage.PNG */,
 				2F03B4E01DE000E6001157C6 /* fiveStar.PNG */,
 				2F03B4E11DE000E6001157C6 /* fourStar.PNG */,
 				2F03B4E21DE000E6001157C6 /* oneStar.PNG */,
@@ -299,6 +302,7 @@
 				2F03B4EB1DE0168B001157C6 /* star.PNG in Resources */,
 				2FA2FC111DC6BEE100D94678 /* Assets.xcassets in Resources */,
 				2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */,
+				2F03B4EF1DE02979001157C6 /* homeImage.PNG in Resources */,
 				2F03B4E81DE000E6001157C6 /* threeStar.PNG in Resources */,
 				2F03B4E71DE000E6001157C6 /* oneStar.PNG in Resources */,
 				2F03B4E61DE000E6001157C6 /* fourStar.PNG in Resources */,
