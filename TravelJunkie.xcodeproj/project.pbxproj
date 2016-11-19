@@ -15,6 +15,8 @@
 		2F03B4E71DE000E6001157C6 /* oneStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E21DE000E6001157C6 /* oneStar.PNG */; };
 		2F03B4E81DE000E6001157C6 /* threeStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E31DE000E6001157C6 /* threeStar.PNG */; };
 		2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E41DE000E6001157C6 /* twoStar.PNG */; };
+		2F03B4EB1DE0168B001157C6 /* star.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4EA1DE0168B001157C6 /* star.PNG */; };
+		2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4EC1DE01759001157C6 /* NewViewController.swift */; };
 		2F12E5291DD24B7100CC3B2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12E5281DD24B7100CC3B2F /* MapKit.framework */; };
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
@@ -57,6 +59,8 @@
 		2F03B4E21DE000E6001157C6 /* oneStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneStar.PNG; sourceTree = "<group>"; };
 		2F03B4E31DE000E6001157C6 /* threeStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeStar.PNG; sourceTree = "<group>"; };
 		2F03B4E41DE000E6001157C6 /* twoStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twoStar.PNG; sourceTree = "<group>"; };
+		2F03B4EA1DE0168B001157C6 /* star.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.PNG; sourceTree = "<group>"; };
+		2F03B4EC1DE01759001157C6 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		2F12E5281DD24B7100CC3B2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				2FA2FC081DC6BEDB00D94678 /* ViewController.swift */,
 				2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */,
 				2FA2FC0A1DC6BEDD00D94678 /* Main.storyboard */,
+				2F03B4EC1DE01759001157C6 /* NewViewController.swift */,
 				2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */,
 				2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */,
 				2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */,
@@ -156,6 +161,7 @@
 				2F03B4E21DE000E6001157C6 /* oneStar.PNG */,
 				2F03B4E31DE000E6001157C6 /* threeStar.PNG */,
 				2F03B4E41DE000E6001157C6 /* twoStar.PNG */,
+				2F03B4EA1DE0168B001157C6 /* star.PNG */,
 				A0D776701DDEA32400DC9035 /* Database.swift */,
 			);
 			path = TravelJunkie;
@@ -290,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FA2FC141DC6BEE200D94678 /* LaunchScreen.storyboard in Resources */,
+				2F03B4EB1DE0168B001157C6 /* star.PNG in Resources */,
 				2FA2FC111DC6BEE100D94678 /* Assets.xcassets in Resources */,
 				2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */,
 				2F03B4E81DE000E6001157C6 /* threeStar.PNG in Resources */,
@@ -324,6 +331,7 @@
 				2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */,
 				2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */,
 				2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */,
+				2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */,
 				2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */,
 				2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */,
 				2F03B4DF1DDFF9C4001157C6 /* MyTripTableViewController.swift in Sources */,
