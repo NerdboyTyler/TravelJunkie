@@ -55,7 +55,8 @@ class LoginViewController: UIViewController {
             if (self.data[0].value(forKey: "userID") as? String == userField.text) && (self.data[0].value(forKey: "password") as? String == passField.text)
             {
                 print("It works!")
-                
+                let defaults = UserDefaults.standard
+                defaults.setValue(userField.text!, forKey: "user")
                 performSegue(withIdentifier: "loginSegue", sender: self)
             }
         }
