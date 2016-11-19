@@ -9,6 +9,7 @@
 import UIKit
 
 class MainTripTableViewController: UITableViewController {
+    var data: [NSDictionary] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +19,40 @@ class MainTripTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func getData()
+    {
+        let url = URL(string: "https://cs.okstate.edu/~weppler/mainTrip.php")
+        print(url!)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: url!){(data,response,error) in
+            guard error == nil else {
+                print("Error in session call: \(error)")
+                return
+            }
+            guard let result = data else {
+                print("No data received")
+                return
+            }
+            do {
+                if let json = try JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [NSDictionary]
+                {
+                    print("JSON data returned:\(json)")
+                    self.data = json
+                    self.tableView.reloadData()
+                }
+            }
+            catch{
+                print("Error Serializing JSON Data: \(error)")
+            }
+        }
+        task.resume()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.getData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,14 +69,40 @@ class MainTripTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.data.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTableViewCell
 
         // Configure the cell...
+        cell.nameLabel.text = data[indexPath.row].value(forKey: "emailID") as? String
+        cell.tripTitleLabel.text = data[indexPath.row].value(forKey: "tripName") as? String
+        cell.dateLabel.text = (data[indexPath.row].value(forKey: "startDate") as! String) + " - " + (data[indexPath.row].value(forKey: "endDate") as! String)
+        
+        let rating = data[indexPath.row].value(forKey: "tripRating") as! String
+        switch(rating)
+        {
+            case "1":
+                cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
+                break
+            case "2":
+                cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
+                break
+            case "3":
+                cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
+                break
+            case "4":
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
+                break
+            case "5":
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+            default:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+        }
 
         return cell
     }
