@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */; };
-		2F03B4D71DDFEE2F001157C6 /* fiveStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4D21DDFEE2F001157C6 /* fiveStar.PNG */; };
-		2F03B4D81DDFEE2F001157C6 /* fourStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4D31DDFEE2F001157C6 /* fourStar.PNG */; };
-		2F03B4D91DDFEE2F001157C6 /* oneStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4D41DDFEE2F001157C6 /* oneStar.PNG */; };
-		2F03B4DA1DDFEE2F001157C6 /* threeStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4D51DDFEE2F001157C6 /* threeStar.PNG */; };
-		2F03B4DB1DDFEE2F001157C6 /* twoStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4D61DDFEE2F001157C6 /* twoStar.PNG */; };
 		2F03B4DD1DDFEEA3001157C6 /* MainTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */; };
 		2F03B4DF1DDFF9C4001157C6 /* MyTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */; };
+		2F03B4E51DE000E6001157C6 /* fiveStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E01DE000E6001157C6 /* fiveStar.PNG */; };
+		2F03B4E61DE000E6001157C6 /* fourStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E11DE000E6001157C6 /* fourStar.PNG */; };
+		2F03B4E71DE000E6001157C6 /* oneStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E21DE000E6001157C6 /* oneStar.PNG */; };
+		2F03B4E81DE000E6001157C6 /* threeStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E31DE000E6001157C6 /* threeStar.PNG */; };
+		2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 2F03B4E41DE000E6001157C6 /* twoStar.PNG */; };
 		2F12E5291DD24B7100CC3B2F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F12E5281DD24B7100CC3B2F /* MapKit.framework */; };
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
@@ -50,13 +50,13 @@
 
 /* Begin PBXFileReference section */
 		2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
-		2F03B4D21DDFEE2F001157C6 /* fiveStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiveStar.PNG; sourceTree = "<group>"; };
-		2F03B4D31DDFEE2F001157C6 /* fourStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourStar.PNG; sourceTree = "<group>"; };
-		2F03B4D41DDFEE2F001157C6 /* oneStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneStar.PNG; sourceTree = "<group>"; };
-		2F03B4D51DDFEE2F001157C6 /* threeStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeStar.PNG; sourceTree = "<group>"; };
-		2F03B4D61DDFEE2F001157C6 /* twoStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twoStar.PNG; sourceTree = "<group>"; };
 		2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTripTableViewController.swift; sourceTree = "<group>"; };
 		2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripTableViewController.swift; sourceTree = "<group>"; };
+		2F03B4E01DE000E6001157C6 /* fiveStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fiveStar.PNG; sourceTree = "<group>"; };
+		2F03B4E11DE000E6001157C6 /* fourStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fourStar.PNG; sourceTree = "<group>"; };
+		2F03B4E21DE000E6001157C6 /* oneStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oneStar.PNG; sourceTree = "<group>"; };
+		2F03B4E31DE000E6001157C6 /* threeStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = threeStar.PNG; sourceTree = "<group>"; };
+		2F03B4E41DE000E6001157C6 /* twoStar.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twoStar.PNG; sourceTree = "<group>"; };
 		2F12E5281DD24B7100CC3B2F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
@@ -151,11 +151,11 @@
 				2FA2FC121DC6BEE200D94678 /* LaunchScreen.storyboard */,
 				2FA2FC151DC6BEE300D94678 /* Info.plist */,
 				2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */,
-				2F03B4D21DDFEE2F001157C6 /* fiveStar.PNG */,
-				2F03B4D31DDFEE2F001157C6 /* fourStar.PNG */,
-				2F03B4D41DDFEE2F001157C6 /* oneStar.PNG */,
-				2F03B4D51DDFEE2F001157C6 /* threeStar.PNG */,
-				2F03B4D61DDFEE2F001157C6 /* twoStar.PNG */,
+				2F03B4E01DE000E6001157C6 /* fiveStar.PNG */,
+				2F03B4E11DE000E6001157C6 /* fourStar.PNG */,
+				2F03B4E21DE000E6001157C6 /* oneStar.PNG */,
+				2F03B4E31DE000E6001157C6 /* threeStar.PNG */,
+				2F03B4E41DE000E6001157C6 /* twoStar.PNG */,
 				A0D776701DDEA32400DC9035 /* Database.swift */,
 			);
 			path = TravelJunkie;
@@ -291,12 +291,12 @@
 			files = (
 				2FA2FC141DC6BEE200D94678 /* LaunchScreen.storyboard in Resources */,
 				2FA2FC111DC6BEE100D94678 /* Assets.xcassets in Resources */,
-				2F03B4DB1DDFEE2F001157C6 /* twoStar.PNG in Resources */,
-				2F03B4DA1DDFEE2F001157C6 /* threeStar.PNG in Resources */,
-				2F03B4D91DDFEE2F001157C6 /* oneStar.PNG in Resources */,
-				2F03B4D81DDFEE2F001157C6 /* fourStar.PNG in Resources */,
+				2F03B4E91DE000E6001157C6 /* twoStar.PNG in Resources */,
+				2F03B4E81DE000E6001157C6 /* threeStar.PNG in Resources */,
+				2F03B4E71DE000E6001157C6 /* oneStar.PNG in Resources */,
+				2F03B4E61DE000E6001157C6 /* fourStar.PNG in Resources */,
 				2FA2FC0C1DC6BEDD00D94678 /* Main.storyboard in Resources */,
-				2F03B4D71DDFEE2F001157C6 /* fiveStar.PNG in Resources */,
+				2F03B4E51DE000E6001157C6 /* fiveStar.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

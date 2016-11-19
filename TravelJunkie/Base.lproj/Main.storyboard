@@ -95,6 +95,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="136" id="wAu-nK-JUg" customClass="TripTableViewCell" customModule="TravelJunkie" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="136"/>
@@ -152,6 +153,7 @@
                                         <constraint firstItem="eTL-sT-uoK" firstAttribute="top" secondItem="9FP-gY-w3p" secondAttribute="topMargin" constant="-8" id="z2K-3C-2e1"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.23400957110000001" green="0.79987046630000003" blue="0.61357625090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="VX0-9y-g2S" id="44z-gJ-M05"/>
                                     <outlet property="nameLabel" destination="eTL-sT-uoK" id="bBi-Ts-1W8"/>
@@ -190,6 +192,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="sectionIndexBackgroundColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="T97-iT-ewe" customClass="TripTableViewCell" customModule="TravelJunkie" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="320" height="135"/>
@@ -247,6 +250,7 @@
                                         <constraint firstItem="Vvm-zo-fP5" firstAttribute="top" secondItem="gpZ-uM-l5p" secondAttribute="bottom" constant="8" id="xW1-Gi-DwO"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.23400957108004899" green="0.79987046632124348" blue="0.61357625092419799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="dateLabel" destination="gpZ-uM-l5p" id="ckK-yk-iu1"/>
                                     <outlet property="nameLabel" destination="tjY-Zj-jx3" id="ESS-CT-9sS"/>
@@ -276,7 +280,7 @@
                     <view key="view" contentMode="scaleToFill" id="dqR-e3-g57">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.23400957110000001" green="0.79987046630000003" blue="0.61357625090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgu-I1-4E8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -309,7 +313,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="tRt-ZI-rsy"/>
                                 </constraints>
-                                <state key="normal" title="Sign Up"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="R7c-pj-VPB" kind="show" id="7iF-5S-Mse"/>
                                 </connections>
@@ -319,7 +325,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="38" id="HqI-X9-fod"/>
                                 </constraints>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.98087780780179989" green="1" blue="0.21970172678114197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="checkLogin:" destination="ZQQ-gK-sVk" eventType="touchUpInside" id="E2P-0C-L2g"/>
                                 </connections>
@@ -343,7 +351,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.23400957110000001" green="0.79987046630000003" blue="0.61357625090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SRa-6r-pjw" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="87f-UD-ki5"/>
                             <constraint firstItem="k49-Yh-lqP" firstAttribute="centerX" secondItem="xoy-mM-ROs" secondAttribute="centerX" id="9xa-5T-QG1"/>
@@ -385,7 +393,9 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="73b-E3-KcZ"/>
                                 </constraints>
-                                <state key="normal" title="Confirm"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="GAG-5O-3f8" kind="show" id="M3Z-YZ-eeO"/>
                                 </connections>
@@ -437,13 +447,15 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="48" id="s5x-gh-o7L"/>
                                 </constraints>
-                                <state key="normal" title="Cancel"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="ZQQ-gK-sVk" kind="show" id="kWX-UG-xcs"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.23400957110000001" green="0.79987046630000003" blue="0.61357625090000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="7Gv-Pz-D4W" firstAttribute="top" secondItem="wJ5-8S-b6W" secondAttribute="bottom" constant="8" id="6gS-1V-IYq"/>
                             <constraint firstItem="tnf-nH-QcT" firstAttribute="top" secondItem="mIe-jX-PCc" secondAttribute="bottom" id="6i0-Gc-DFS"/>
@@ -528,6 +540,6 @@
         <image name="fiveStar.PNG" width="284" height="40"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="god-ut-lJv"/>
+        <segue reference="M3Z-YZ-eeO"/>
     </inferredMetricsTieBreakers>
 </document>
