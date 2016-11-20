@@ -84,29 +84,33 @@ class MapViewController: UIViewController{
             let newCoord = mapView.convert(touchPoint, toCoordinateFrom: mapView)
             let annotation = MKPointAnnotation()
             annotation.coordinate = newCoord
+            let defaults = UserDefaults.standard
+            let me = defaults.value(forKey: "user")
             
             let alert = UIAlertController(title: "New Pin", message: "Enter a title for your pin.", preferredStyle: .alert)
             alert.addTextField(configurationHandler: addTextField)
-            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:wordEntered)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:{(UIAlertAction) in
+                self.pinTitle = self.newWordField.text
+                
+                let trimmedString = self.pinTitle?.replacingOccurrences(of: " ", with: "")
+                //id, userID, pinLat, pinLong, pinColor, pinTitle
+                let thisurl = URL(string: "https://cs.okstate.edu/~weppler/newPin.php/\(me!)/\(annotation.coordinate.latitude)/\(annotation.coordinate.longitude)/green/\(trimmedString!)")
+                let config = URLSessionConfiguration.default
+                let session = URLSession(configuration: config)
+                let task = session.dataTask(with: thisurl!){(error) in
+                    guard error == nil else {
+                        print("Error in session call: \(error)")
+                        return
+                    }
+                    
+                }
+                task.resume()
+            })
             alert.addAction(okAction)
             self.present(alert, animated: true, completion:nil)
             annotation.title = pinTitle
             
-            let defaults = UserDefaults.standard
-            let me = defaults.value(forKey: "user")
-            let trimmedString = pinTitle?.replacingOccurrences(of: " ", with: "")
-            //id, userID, pinLat, pinLong, pinColor, pinTitle
-            let thisurl = URL(string: "https://cs.okstate.edu/~weppler/newPin.php/\(me!)/\(annotation.coordinate.latitude)/\(annotation.coordinate.longitude)/green/\(trimmedString)")
-            let config = URLSessionConfiguration.default
-            let session = URLSession(configuration: config)
-            let task = session.dataTask(with: thisurl!){(error) in
-                guard error == nil else {
-                    print("Error in session call: \(error)")
-                    return
-                }
-                
-            }
-            task.resume()
+            
             
             mapView.addAnnotation(annotation)
         }
