@@ -465,10 +465,10 @@
             </objects>
             <point key="canvasLocation" x="-881.25" y="123.59154929577466"/>
         </scene>
-        <!--View Controller-->
+        <!--New User View Controller-->
         <scene sceneID="aIg-Ss-Cv5">
             <objects>
-                <viewController id="R7c-pj-VPB" sceneMemberID="viewController">
+                <viewController id="R7c-pj-VPB" customClass="NewUserViewController" customModule="TravelJunkie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="mIe-jX-PCc"/>
                         <viewControllerLayoutGuide type="bottom" id="zPV-kj-OxE"/>
@@ -486,7 +486,7 @@
                                     <color key="titleColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GAG-5O-3f8" kind="show" id="M3Z-YZ-eeO"/>
+                                    <action selector="confirm:" destination="R7c-pj-VPB" eventType="touchUpInside" id="BMz-K9-DuE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tnf-nH-QcT">
@@ -562,6 +562,14 @@
                             <constraint firstItem="Irb-44-10g" firstAttribute="centerX" secondItem="9SF-wB-1Jl" secondAttribute="centerX" id="ytH-1h-ZUS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstNameField" destination="tIr-53-Ee6" id="WBH-nz-GXc"/>
+                        <outlet property="lastNameField" destination="hQt-i1-SHK" id="yLD-WQ-Y4p"/>
+                        <outlet property="passField" destination="wJ5-8S-b6W" id="xU8-Xy-z7j"/>
+                        <outlet property="userLabel" destination="tnf-nH-QcT" id="BMw-S6-nVp"/>
+                        <outlet property="userNameField" destination="lZx-yM-ZMF" id="TO3-iY-g1p"/>
+                        <segue destination="GAG-5O-3f8" kind="show" identifier="user" id="lqW-73-Y6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2fh-Lr-Pj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -631,7 +639,7 @@
         <image name="star.PNG" width="29" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="lqW-73-Y6A"/>
         <segue reference="dmo-G0-map"/>
-        <segue reference="god-ut-lJv"/>
     </inferredMetricsTieBreakers>
 </document>
