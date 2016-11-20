@@ -18,6 +18,7 @@ protocol HandleMapSearch: class {
 
 class MapViewController: UIViewController{
 
+    var data: [NSDictionary] = []
     var selectedPin: MKPlacemark?
     var resultSearchController: UISearchController!
     
@@ -65,6 +66,58 @@ class MapViewController: UIViewController{
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(MapViewController.addAnnotation(gestureRecognizer:)))
         longPress.minimumPressDuration = 2.0
         mapView.addGestureRecognizer(longPress)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.getData()
+    }
+    
+    func getData()
+    {
+        let defaults2 = UserDefaults.standard
+        let me2 = defaults2.value(forKey: "user")
+        let url = URL(string: "https://cs.okstate.edu/~weppler/map.php/\(me2!)")
+        print(url!)
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: url!){(data,response,error) in
+            guard error == nil else {
+                print("Error in session call: \(error)")
+                return
+            }
+            guard let result = data else {
+                print("No data received")
+                return
+            }
+            do {
+                if let json = try JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [NSDictionary]
+                {
+                    print("JSON data returned:\(json)")
+                    self.data = json
+                    self.addPins()
+                }
+            }
+            catch{
+                print("Error Serializing JSON Data: \(error)")
+            }
+        }
+        task.resume()
+    }
+    
+    func addPins()
+    {
+        for d in data
+        {
+            let pinLat = d.value(forKey: "pinLat") as! String
+            let pinLong = d.value(forKey: "pinLong") as! String
+            let pinTitle = d.value(forKey: "pinTitle") as! String
+            //let pinColor = d.value(forKey: "pinColor") as! String
+            let annotation = MKPointAnnotation()
+            annotation.coordinate.latitude = Double(pinLat)!
+            annotation.coordinate.longitude = Double(pinLong)!
+            annotation.title = pinTitle
+            mapView.addAnnotation(annotation)
+        }
     }
     
     func getDirections(){
