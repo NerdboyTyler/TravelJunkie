@@ -22,11 +22,23 @@ class MapViewController: UIViewController{
     var resultSearchController: UISearchController!
     
     let locationManager = CLLocationManager()
+    @IBOutlet var newWordField: UITextField!
     
     @IBOutlet weak var mapView: MKMapView!
     
     @IBAction func button3(_ sender: AnyObject) {
         getDirections()
+    }
+    var pinTitle: String?
+    
+    func wordEntered(alert: UIAlertAction!){
+        // store the new word
+        pinTitle = self.newWordField.text
+    }
+    func addTextField(textField: UITextField!){
+        // add the text field and make the result global
+        textField.placeholder = "Title"
+        self.newWordField = textField
     }
     
     
@@ -64,13 +76,37 @@ class MapViewController: UIViewController{
     
     func addAnnotation(gestureRecognizer:UIGestureRecognizer)
     {
-        print("pushed")
+        
         if gestureRecognizer.state == UIGestureRecognizerState.began
         {
+            print("pushed")
             let touchPoint = gestureRecognizer.location(in: mapView)
             let newCoord = mapView.convert(touchPoint, toCoordinateFrom: mapView)
             let annotation = MKPointAnnotation()
             annotation.coordinate = newCoord
+            
+            let alert = UIAlertController(title: "New Pin", message: "Enter a title for your pin.", preferredStyle: .alert)
+            alert.addTextField(configurationHandler: addTextField)
+            let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:wordEntered)
+            alert.addAction(okAction)
+            self.present(alert, animated: true, completion:nil)
+            annotation.title = pinTitle
+            
+            let defaults = UserDefaults.standard
+            let me = defaults.value(forKey: "user")
+            let trimmedString = pinTitle?.replacingOccurrences(of: " ", with: "")
+            //id, userID, pinLat, pinLong, pinColor, pinTitle
+            let thisurl = URL(string: "https://cs.okstate.edu/~weppler/newPin.php/\(me!)/\(annotation.coordinate.latitude)/\(annotation.coordinate.longitude)/green/\(trimmedString)")
+            let config = URLSessionConfiguration.default
+            let session = URLSession(configuration: config)
+            let task = session.dataTask(with: thisurl!){(error) in
+                guard error == nil else {
+                    print("Error in session call: \(error)")
+                    return
+                }
+                
+            }
+            task.resume()
             
             mapView.addAnnotation(annotation)
         }
