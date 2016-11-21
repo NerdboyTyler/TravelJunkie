@@ -11,8 +11,8 @@ import UIKit
 
 class Database {
     
-    let dbUsername = "ammarh"//Use database username string
-    let dbPassword = "Jaasu786"//use your database password string
+    let dbUsername = ""//Use database username string
+    let dbPassword = ""//use your database password string
     
     func userValidation(username: String, password: String){
         let url = URL(string: "https://cs.okstate.edu/~ammarh/loginValidation.php/\(dbUsername)/\(dbPassword)/Users/\(username)/\(password)")!
