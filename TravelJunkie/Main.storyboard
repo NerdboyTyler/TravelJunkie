@@ -141,6 +141,14 @@
                                                 <constraint firstAttribute="height" constant="41" id="XmA-9V-WIh"/>
                                             </constraints>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7m-64-jfK">
+                                            <rect key="frame" x="266" y="8" width="46" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <connections>
+                                                <action selector="btnShare:" destination="tGO-bz-VcO" eventType="touchUpInside" id="Evn-zH-pKg"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="uDf-l6-1ZB" firstAttribute="centerX" secondItem="9FP-gY-w3p" secondAttribute="centerX" id="7l0-B9-s4B"/>
@@ -267,7 +275,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kUY-u6-6xG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1991.25" y="1654.2253521126761"/>
+            <point key="canvasLocation" x="1993" y="1727"/>
         </scene>
         <!--New View Controller-->
         <scene sceneID="ez1-uc-vOe">
@@ -365,7 +373,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zgu-I1-4E8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3007.5" y="874.64788732394368"/>
+            <point key="canvasLocation" x="3045" y="1726"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="c2q-qp-RZb">
@@ -640,6 +648,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lqW-73-Y6A"/>
-        <segue reference="dmo-G0-map"/>
+        <segue reference="7bE-Fz-w1q"/>
     </inferredMetricsTieBreakers>
 </document>

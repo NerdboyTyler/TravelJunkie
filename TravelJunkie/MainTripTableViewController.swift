@@ -10,6 +10,8 @@ import UIKit
 
 class MainTripTableViewController: UITableViewController {
     var data: [NSDictionary] = []
+    @IBAction func btnShare(_ sender: UIButton) {
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
