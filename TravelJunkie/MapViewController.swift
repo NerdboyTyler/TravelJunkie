@@ -111,7 +111,7 @@ class MapViewController: UIViewController{
             let pinLat = d.value(forKey: "pinLat") as! String
             let pinLong = d.value(forKey: "pinLong") as! String
             let pinTitle = d.value(forKey: "pinTitle") as! String
-            //let pinColor = d.value(forKey: "pinColor") as! String
+            let pinColor = d.value(forKey: "pinColor") as! String
             let annotation = MKPointAnnotation()
             annotation.coordinate.latitude = Double(pinLat)!
             annotation.coordinate.longitude = Double(pinLong)!
@@ -223,14 +223,11 @@ extension MapViewController : MKMapViewDelegate {
         let reuseId = "pin"
         guard let pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView else { return nil }
         
-        pinView.pinTintColor = UIColor.yellow
+        pinView.pinTintColor = UIColor.purple
         pinView.canShowCallout = true
-        let smallSquare = CGSize(width: 30, height: 30)
-        var button: UIButton?
-        button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquare))
-        button?.setBackgroundImage(UIImage(named: "car"), for: UIControlState())
-        button?.addTarget(self, action: #selector(MapViewController.getDirections), for: .touchUpInside)
-        pinView.leftCalloutAccessoryView = button
+        pinView.tintColor = UIColor.purple
+        pinView.backgroundColor = UIColor.purple
+        
         
         return pinView
     }
