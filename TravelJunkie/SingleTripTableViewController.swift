@@ -23,6 +23,10 @@ class SingleTripTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        //pickUpCars.append(Car(roadName: "DRGW", carNumber: 18347, location: "Marble City"))
+        lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: "Lodge"))
+        foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: "Food"))
+        sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: "Sight"))
     }
 
     override func didReceiveMemoryWarning() {
@@ -56,12 +60,29 @@ class SingleTripTableViewController: UITableViewController {
             return 0
         }
     }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return locTypes[section]
+    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        
         // Configure the cell...
+        if(indexPath[0] == 0)
+        {
+            cell.textLabel?.text = lodgeArray[indexPath.row].name
+        }
+        else if(indexPath[0] == 1)
+        {
+            cell.textLabel?.text = foodArray[indexPath.row].name
+        }
+        else if(indexPath[0] == 2)
+        {
+            cell.textLabel?.text = sightArray[indexPath.row].name
+        }
+        
 
         return cell
     }

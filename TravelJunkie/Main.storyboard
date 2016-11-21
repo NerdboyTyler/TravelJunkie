@@ -193,16 +193,16 @@
             </objects>
             <point key="canvasLocation" x="1993.125" y="877.81690140845069"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Single Trip Table View Controller-->
         <scene sceneID="yDD-fZ-fYq">
             <objects>
-                <tableViewController id="QdD-Yg-VDm" sceneMemberID="viewController">
+                <tableViewController id="QdD-Yg-VDm" customClass="SingleTripTableViewController" customModule="TravelJunkie" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="221-88-Z0X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="cSo-Yq-WQm" style="IBUITableViewCellStyleDefault" id="ZGX-u0-Z8a">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" textLabel="cSo-Yq-WQm" style="IBUITableViewCellStyleDefault" id="ZGX-u0-Z8a">
                                 <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZGX-u0-Z8a" id="JYc-vU-Pi0">
@@ -302,7 +302,6 @@
                                     <outlet property="nameLabel" destination="tjY-Zj-jx3" id="ESS-CT-9sS"/>
                                     <outlet property="ratingImageView" destination="Vvm-zo-fP5" id="NfU-gn-f65"/>
                                     <outlet property="tripTitleLabel" destination="jW1-8Q-tlQ" id="YMn-0c-fAL"/>
-                                    <segue destination="QdD-Yg-VDm" kind="show" id="n6c-fv-oaU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -723,7 +722,6 @@
         <image name="star.PNG" width="29" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ohA-8A-D9d"/>
         <segue reference="lqW-73-Y6A"/>
         <segue reference="7bE-Fz-w1q"/>
     </inferredMetricsTieBreakers>
