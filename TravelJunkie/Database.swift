@@ -11,8 +11,8 @@ import UIKit
 
 class Database {
     
-    let dbUsername = ""//Use database username string
-    let dbPassword = ""//use your database password string
+    let dbUsername = "ammarh"//Use database username string
+    let dbPassword = "Jaasu786"//use your database password string
     
     func userValidation(username: String, password: String){
         let url = URL(string: "https://cs.okstate.edu/~ammarh/loginValidation.php/\(dbUsername)/\(dbPassword)/Users/\(username)/\(password)")!
@@ -195,6 +195,70 @@ class Database {
             } catch {
                 print("Error serializing JSON Data: \(error)")
             }
+        }
+        task.resume()
+    }
+    
+    func addSubTrip (userID: String, subTripName: String, subTripDate: String, subTripPrice: String, subTripRating: Int) {
+        let modifiedSubTripName = subTripName.replacingOccurrences(of: " ", with: "_")
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/subTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedSubTripName)/\(subTripDate)/\(subTripPrice)/\(subTripRating)")!
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: url) { (data, response, error) in
+            guard error == nil else {
+                print("Error in session call: \(error)")
+                return
+            }
+            guard let result = data else {
+                print("No data received")
+                return
+            }
+            // php not returning anything. might delete lines below if it dont cause crash.
+            //===================
+            do {
+                if let json = try! JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [[String:Any]] {
+                    if json.isEmpty == false {
+                        print("JSON data returned: \(json)")
+                    }else {
+                        print("JSON data not returned: \(json)")
+                    }
+                }
+            } catch {
+                print("Error serializing JSON Data: \(error)")
+            }
+            //===================
+        }
+        task.resume()
+    }
+    
+    func deleteSubTrip (userID: String, subTripName: String, subTripDate: String){
+        let modifiedSubTripName = subTripName.replacingOccurrences(of: " ", with: "_")
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/removeSubTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedSubTripName)/\(subTripDate)")!
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: url) { (data, response, error) in
+            guard error == nil else {
+                print("Error in session call: \(error)")
+                return
+            }
+            guard let result = data else {
+                print("No data received")
+                return
+            }
+            // php not returning anything. might delete lines below if it dont cause crash.
+            //===================
+            do {
+                if let json = try! JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [[String:Any]] {
+                    if json.isEmpty == false {
+                        print("JSON data returned: \(json)")
+                    }else {
+                        print("JSON data not returned: \(json)")
+                    }
+                }
+            } catch {
+                print("Error serializing JSON Data: \(error)")
+            }
+            //===================
         }
         task.resume()
     }
