@@ -26,6 +26,7 @@
 		2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */; };
 		2F8FFB921DE39456006C59EE /* SingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */; };
 		2F8FFB941DE396B6006C59EE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB931DE396B6006C59EE /* Location.swift */; };
+		2F8FFB961DE3A0E3006C59EE /* MySingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */; };
 		2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */; };
 		2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC081DC6BEDB00D94678 /* ViewController.swift */; };
 		2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */; };
@@ -74,6 +75,7 @@
 		2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTripTableViewController.swift; sourceTree = "<group>"; };
 		2F8FFB931DE396B6006C59EE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySingleTripTableViewController.swift; sourceTree = "<group>"; };
 		2FA2FC031DC6BEDA00D94678 /* TravelJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA2FC081DC6BEDB00D94678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */,
 				2F03B4F21DE1887D001157C6 /* Main.storyboard */,
 				2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */,
+				2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */,
 				2F8FFB931DE396B6006C59EE /* Location.swift */,
 				2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */,
 				2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */,
@@ -355,6 +358,7 @@
 				2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */,
 				2F03B4DD1DDFEEA3001157C6 /* MainTripTableViewController.swift in Sources */,
 				A0D776711DDEA32400DC9035 /* Database.swift in Sources */,
+				2F8FFB961DE3A0E3006C59EE /* MySingleTripTableViewController.swift in Sources */,
 				2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

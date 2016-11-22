@@ -13,9 +13,9 @@ class Location: NSObject {
     var price: Double
     var rating: Int
     var parentTripID: Int
-    var locType: String
+    var locType: Int
     
-    init (name: String, price: Double, rating: Int, parentTripID: Int, locType: String) {
+    init (name: String, price: Double, rating: Int, parentTripID: Int, locType: Int) {
         self.name = name
         self.price = price
         self.rating = rating
