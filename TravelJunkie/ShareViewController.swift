@@ -190,24 +190,26 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         picker.allowsEditing = true
         picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-        if let myImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+        if let newImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
         
-            let data = UIImagePNGRepresentation(myImage)!
-            UserDefaults.standard.setValue(data, forKey: "myImage")
+            let data = UIImagePNGRepresentation(newImage)!
+           var file = NSTemporaryDirectory()
+          //  var file = temp.appending("newImage.png")
+            //UserDefaults.standard.setValue(data, forKey: "newImage")
             do {
                 
-                let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
-                let url = NSURL(fileURLWithPath: "\(documentsPath)/myImage")
-                try data.write(to: url as URL, options: .atomic)
+               // let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+                let url = NSURL(fileURLWithPath: "\(file)newImage.png")
+                try data.write(to: url as URL, options: .atomicWrite)
                 
             } catch {
                 print("Error")
             }
             
-            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+           // let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
             let destinationPath = "/"
-            let sourcePath = "\(documentsPath)/myImage"
-            let uploadFilename = "myImage"
+            let sourcePath = "\(file)newImage.png"
+            let uploadFilename = "newImage.png"
             self.showProgressBar()
             self.dbRestClient.uploadFile(uploadFilename, toPath: destinationPath, withParentRev: nil, fromPath: sourcePath)
         }

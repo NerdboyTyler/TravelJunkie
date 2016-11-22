@@ -29,10 +29,10 @@
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
 		2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */; };
-		2F5189991DE4A70B00DACEBA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5189981DE4A70B00DACEBA /* ShareViewController.swift */; };
 		2F51899B1DE4A7C200DACEBA /* Contacts-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F51899A1DE4A7C200DACEBA /* Contacts-30.png */; };
 		2F51899D1DE4A7C900DACEBA /* Download-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F51899C1DE4A7C900DACEBA /* Download-30.png */; };
 		2F51899F1DE4A7CF00DACEBA /* Dropbox Filled-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F51899E1DE4A7CF00DACEBA /* Dropbox Filled-30.png */; };
+		2F5189A11DE4BBA300DACEBA /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5189A01DE4BBA300DACEBA /* ShareViewController.swift */; };
 		2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */; };
 		2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC081DC6BEDB00D94678 /* ViewController.swift */; };
 		2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */; };
@@ -92,10 +92,10 @@
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2F5189981DE4A70B00DACEBA /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		2F51899A1DE4A7C200DACEBA /* Contacts-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Contacts-30.png"; sourceTree = "<group>"; };
 		2F51899C1DE4A7C900DACEBA /* Download-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Download-30.png"; sourceTree = "<group>"; };
 		2F51899E1DE4A7CF00DACEBA /* Dropbox Filled-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dropbox Filled-30.png"; sourceTree = "<group>"; };
+		2F5189A01DE4BBA300DACEBA /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		2FA2FC031DC6BEDA00D94678 /* TravelJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA2FC081DC6BEDB00D94678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -230,12 +230,12 @@
 				2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */,
 				2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */,
 				2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */,
+				2F5189A01DE4BBA300DACEBA /* ShareViewController.swift */,
 				2FA2FC101DC6BEE100D94678 /* Assets.xcassets */,
 				2F51899A1DE4A7C200DACEBA /* Contacts-30.png */,
 				2F51899C1DE4A7C900DACEBA /* Download-30.png */,
 				2F51899E1DE4A7CF00DACEBA /* Dropbox Filled-30.png */,
 				2FA2FC121DC6BEE200D94678 /* LaunchScreen.storyboard */,
-				2F5189981DE4A70B00DACEBA /* ShareViewController.swift */,
 				2FA2FC151DC6BEE300D94678 /* Info.plist */,
 				2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */,
 				2F03B4EE1DE02979001157C6 /* homeImage.PNG */,
@@ -570,7 +570,7 @@
 				2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */,
 				A073DABE1DE3DEF80073C90D /* Location.swift in Sources */,
 				2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */,
-				2F5189991DE4A70B00DACEBA /* ShareViewController.swift in Sources */,
+				2F5189A11DE4BBA300DACEBA /* ShareViewController.swift in Sources */,
 				A073DABA1DE3DED90073C90D /* SingleTripTableViewController.swift in Sources */,
 				2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */,
 				2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */,
