@@ -12,7 +12,7 @@ class MainTripTableViewController: UITableViewController {
     var data: [NSDictionary] = []
     @IBAction func btnShare(_ sender: UIButton) {
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -77,7 +77,7 @@ class MainTripTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTableViewCell
-
+        
         // Configure the cell...
         cell.nameLabel.text = data[indexPath.row].value(forKey: "emailID") as? String
         cell.tripTitleLabel.text = data[indexPath.row].value(forKey: "tripName") as? String
