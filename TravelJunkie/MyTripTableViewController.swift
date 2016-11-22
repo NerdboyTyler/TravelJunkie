@@ -11,8 +11,6 @@ import UIKit
 class MyTripTableViewController: UITableViewController {
 
     var data: [NSDictionary] = []
-    var user = String()
-    var trip = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,10 +75,6 @@ class MyTripTableViewController: UITableViewController {
         return self.data.count
     }
     
-    override func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        user = (data[indexPath.row].value(forKey: "emailID") as? String)!
-        trip = (data[indexPath.row].value(forKey: "tripName") as? String)!
-    }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTableViewCell
@@ -151,14 +145,14 @@ class MyTripTableViewController: UITableViewController {
     }
     */
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destination = segue.destination as? MySingleTripTableViewController {
-            destination.userID = user
-            destination.tripName = trip
-        }
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
     }
+    */
+
 }

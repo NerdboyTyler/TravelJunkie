@@ -122,9 +122,7 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
             self.navigationController?.popViewController(animated: true)
             shareAlert(text: "Do you want to share the trip details?")
-            
-    
-                
+           
             
         }
         
@@ -154,13 +152,15 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
                     self.present(imagePicker, animated: true, completion: nil)
                     
                 }*/
-                if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+               
                     
                     imagePicker.delegate = self
-                    imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary;
+                    imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
                     imagePicker.allowsEditing = true
-                    self.present(imagePicker, animated: true, completion: nil)
-                }
+                    
+                   self.present(imagePicker, animated: true, completion: nil)
+                   
+                
              
               
                 
@@ -171,6 +171,8 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
                  self.dbRestClient.uploadFile(uploadFilename, toPath: destinationPath, withParentRev: nil, fromPath: sourcePath)*/
                 
             }
+            
+        
           
             let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (action) -> Void in
                 
@@ -184,16 +186,32 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
         }
 
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo editingInfo: [String : Any]) {
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        picker.allowsEditing = true
+        picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+        if let myImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
         
-        if let newImage = editingInfo[UIImagePickerControllerOriginalImage] as? UIImage{
-            self.textAlert(text: "Image path is \(newImage.description)")
+            let data = UIImagePNGRepresentation(myImage)!
+            UserDefaults.standard.setValue(data, forKey: "myImage")
+            do {
+                
+                let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+                let url = NSURL(fileURLWithPath: "\(documentsPath)/myImage")
+                try data.write(to: url as URL, options: .atomic)
+                
+            } catch {
+                print("Error")
+            }
+            
+            let documentsPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
+            let destinationPath = "/"
+            let sourcePath = "\(documentsPath)/myImage"
+            let uploadFilename = "myImage"
+            self.showProgressBar()
+            self.dbRestClient.uploadFile(uploadFilename, toPath: destinationPath, withParentRev: nil, fromPath: sourcePath)
         }
-        else{
-            self.textAlert(text: "unable to load image")
-        }
-        self.dismiss(animated: true, completion: nil)
-        
+        picker.dismiss(animated: true, completion: nil)
     }
     
         @IBAction func reloadFiles(_ sender: AnyObject) {
@@ -329,7 +347,17 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
         }
         
         @IBAction func download(_ sender: AnyObject) {
-            for x in selectedCells{
+            if !DBSession.shared().isLinked() {
+                print("You're not connected to Dropbox")
+                textAlert(text: "You're not connected to Dropbox")
+                return
+            }
+            else{
+            if tblFiles.indexPathsForSelectedRows?.count == nil{
+                textAlert(text: "Select atleast one file to download")
+            }
+           else{
+            for x in tblFiles.indexPathsForSelectedRows!{
                 let selectedFile: DBMetadata = dropboxMetadata.contents[x.row] as! DBMetadata
                 
                 let documentsDirectoryPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as NSString
@@ -344,7 +372,8 @@ class ShareViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 dbRestClient.loadFile(selectedFile.path, intoPath: documentsDirectoryPath as String)
             }
-            
+            }
+            }
         }
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
             return 60.0

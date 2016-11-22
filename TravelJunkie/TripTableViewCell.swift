@@ -14,8 +14,6 @@ class TripTableViewCell: UITableViewCell {
     @IBOutlet weak var tripTitleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
-
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
