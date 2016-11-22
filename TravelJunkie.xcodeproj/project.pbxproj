@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130B40C61DE393990092E12F /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 130B40C51DE393990092E12F /* ShareViewController.swift */; };
+		130B40C91DE394EE0092E12F /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130B40C81DE394EE0092E12F /* DropboxSDK.framework */; };
+		130B40CB1DE394FE0092E12F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130B40CA1DE394FE0092E12F /* QuartzCore.framework */; };
+		130B40CD1DE3950E0092E12F /* EVContactsPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130B40CC1DE3950E0092E12F /* EVContactsPicker.framework */; };
+		130B40CF1DE395130092E12F /* APAddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130B40CE1DE395130092E12F /* APAddressBook.framework */; };
+		130B40D11DE395200092E12F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 130B40D01DE395200092E12F /* Security.framework */; };
 		2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */; };
 		2F03B4DD1DDFEEA3001157C6 /* MainTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */; };
 		2F03B4DF1DDFF9C4001157C6 /* MyTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */; };
@@ -24,10 +30,6 @@
 		2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */; };
 		2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */; };
 		2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */; };
-		2F8FFB921DE39456006C59EE /* SingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */; };
-		2F8FFB941DE396B6006C59EE /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB931DE396B6006C59EE /* Location.swift */; };
-		2F8FFB961DE3A0E3006C59EE /* MySingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */; };
-		2F8FFB981DE3CFE0006C59EE /* NewLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FFB971DE3CFDF006C59EE /* NewLocViewController.swift */; };
 		2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */; };
 		2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC081DC6BEDB00D94678 /* ViewController.swift */; };
 		2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC0D1DC6BEDF00D94678 /* TravelJunkie.xcdatamodeld */; };
@@ -36,7 +38,10 @@
 		2FA2FC1F1DC6BEE400D94678 /* TravelJunkieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC1E1DC6BEE400D94678 /* TravelJunkieTests.swift */; };
 		2FA2FC2A1DC6BEE600D94678 /* TravelJunkieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC291DC6BEE600D94678 /* TravelJunkieUITests.swift */; };
 		2FF9F7141DD9183000EF15DE /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */; };
+		60AD65B61D04C07C05685D3F /* Pods_TravelJunkieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C484523E600B51E05520A8F /* Pods_TravelJunkieTests.framework */; };
 		A0D776711DDEA32400DC9035 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D776701DDEA32400DC9035 /* Database.swift */; };
+		A0E72812CFAB98242370F0F9 /* Pods_TravelJunkieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE90165F5BCFE86A3BB3F7D /* Pods_TravelJunkieUITests.framework */; };
+		A621ABA2CD9D635A9E37E1AA /* Pods_TravelJunkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6CA10A8F1595D7F9C8EE8 /* Pods_TravelJunkie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130B40C51DE393990092E12F /* ShareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		130B40C81DE394EE0092E12F /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DropboxSDK.framework; sourceTree = "<group>"; };
+		130B40CA1DE394FE0092E12F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		130B40CC1DE3950E0092E12F /* EVContactsPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EVContactsPicker.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelJunkie-bvpdiwzxdacvjtfiajwhzrlgkufu/Build/Products/Debug-iphonesimulator/EVContactsPicker/EVContactsPicker.framework"; sourceTree = "<group>"; };
+		130B40CE1DE395130092E12F /* APAddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APAddressBook.framework; path = "../../Library/Developer/Xcode/DerivedData/TravelJunkie-bvpdiwzxdacvjtfiajwhzrlgkufu/Build/Products/Debug-iphonesimulator/APAddressBook/APAddressBook.framework"; sourceTree = "<group>"; };
+		130B40D01DE395200092E12F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		130B40DD1DE396B00092E12F /* TravelJunkie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TravelJunkie-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTripTableViewController.swift; sourceTree = "<group>"; };
 		2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTripTableViewController.swift; sourceTree = "<group>"; };
@@ -74,15 +86,11 @@
 		2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		2F24BEDC1DDEC0D600CA04D3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTripTableViewController.swift; sourceTree = "<group>"; };
-		2F8FFB931DE396B6006C59EE /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySingleTripTableViewController.swift; sourceTree = "<group>"; };
-		2F8FFB971DE3CFDF006C59EE /* NewLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocViewController.swift; sourceTree = "<group>"; };
 		2FA2FC031DC6BEDA00D94678 /* TravelJunkie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravelJunkie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FA2FC081DC6BEDB00D94678 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FA2FC0E1DC6BEDF00D94678 /* TravelJunkie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TravelJunkie.xcdatamodel; sourceTree = "<group>"; };
-		2FA2FC101DC6BEE100D94678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2FA2FC101DC6BEE100D94678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = TravelJunkie/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		2FA2FC131DC6BEE200D94678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FA2FC151DC6BEE300D94678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FA2FC1A1DC6BEE400D94678 /* TravelJunkieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelJunkieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +100,16 @@
 		2FA2FC291DC6BEE600D94678 /* TravelJunkieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelJunkieUITests.swift; sourceTree = "<group>"; };
 		2FA2FC2B1DC6BEE600D94678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		4A2865BA482B0F8F529862AD /* Pods-TravelJunkieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkieUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C484523E600B51E05520A8F /* Pods_TravelJunkieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJunkieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F6CA10A8F1595D7F9C8EE8 /* Pods_TravelJunkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJunkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B9E248B20163F8CB55DBFB /* Pods-TravelJunkieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CE90165F5BCFE86A3BB3F7D /* Pods_TravelJunkieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJunkieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D776701DDEA32400DC9035 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		C14B16722E7C41CFA849081A /* Pods-TravelJunkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkie.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.release.xcconfig"; sourceTree = "<group>"; };
+		E5FA5FE44D422EDEA1276E14 /* Pods-TravelJunkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.debug.xcconfig"; sourceTree = "<group>"; };
+		F55E786344646AAC0B9C2429 /* Pods-TravelJunkieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkieTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEB77F57C340C86CB1A87946 /* Pods-TravelJunkieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkieUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +117,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130B40D11DE395200092E12F /* Security.framework in Frameworks */,
+				130B40CF1DE395130092E12F /* APAddressBook.framework in Frameworks */,
+				130B40CD1DE3950E0092E12F /* EVContactsPicker.framework in Frameworks */,
+				130B40CB1DE394FE0092E12F /* QuartzCore.framework in Frameworks */,
+				130B40C91DE394EE0092E12F /* DropboxSDK.framework in Frameworks */,
 				2F12E5291DD24B7100CC3B2F /* MapKit.framework in Frameworks */,
+				A621ABA2CD9D635A9E37E1AA /* Pods_TravelJunkie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60AD65B61D04C07C05685D3F /* Pods_TravelJunkieTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,16 +139,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E72812CFAB98242370F0F9 /* Pods_TravelJunkieUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F4A199AB29E40F4D2B38AFB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5FA5FE44D422EDEA1276E14 /* Pods-TravelJunkie.debug.xcconfig */,
+				C14B16722E7C41CFA849081A /* Pods-TravelJunkie.release.xcconfig */,
+				F55E786344646AAC0B9C2429 /* Pods-TravelJunkieTests.debug.xcconfig */,
+				94B9E248B20163F8CB55DBFB /* Pods-TravelJunkieTests.release.xcconfig */,
+				4A2865BA482B0F8F529862AD /* Pods-TravelJunkieUITests.debug.xcconfig */,
+				FEB77F57C340C86CB1A87946 /* Pods-TravelJunkieUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2F12E5271DD24B7000CC3B2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				130B40D01DE395200092E12F /* Security.framework */,
+				130B40CE1DE395130092E12F /* APAddressBook.framework */,
+				130B40CC1DE3950E0092E12F /* EVContactsPicker.framework */,
+				130B40CA1DE394FE0092E12F /* QuartzCore.framework */,
 				2F12E5281DD24B7100CC3B2F /* MapKit.framework */,
+				83F6CA10A8F1595D7F9C8EE8 /* Pods_TravelJunkie.framework */,
+				4C484523E600B51E05520A8F /* Pods_TravelJunkieTests.framework */,
+				9CE90165F5BCFE86A3BB3F7D /* Pods_TravelJunkieUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,6 +182,7 @@
 				2FA2FC281DC6BEE400D94678 /* TravelJunkieUITests */,
 				2FA2FC041DC6BEDA00D94678 /* Products */,
 				2F12E5271DD24B7000CC3B2F /* Frameworks */,
+				0F4A199AB29E40F4D2B38AFB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +199,7 @@
 		2FA2FC051DC6BEDA00D94678 /* TravelJunkie */ = {
 			isa = PBXGroup;
 			children = (
+				130B40C81DE394EE0092E12F /* DropboxSDK.framework */,
 				2F12E52C1DD2ABA200CC3B2F /* LocationManager.swift */,
 				2FA2FC061DC6BEDB00D94678 /* AppDelegate.swift */,
 				2FA2FC081DC6BEDB00D94678 /* ViewController.swift */,
@@ -162,14 +209,9 @@
 				2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */,
 				2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */,
 				2F03B4F21DE1887D001157C6 /* Main.storyboard */,
-				2F8FFB911DE39456006C59EE /* SingleTripTableViewController.swift */,
-				2F8FFB951DE3A0E3006C59EE /* MySingleTripTableViewController.swift */,
-				2F8FFB931DE396B6006C59EE /* Location.swift */,
-				2F8FFB971DE3CFDF006C59EE /* NewLocViewController.swift */,
 				2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */,
 				2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */,
 				2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */,
-				A0D776701DDEA32400DC9035 /* Database.swift */,
 				2FA2FC101DC6BEE100D94678 /* Assets.xcassets */,
 				2FA2FC121DC6BEE200D94678 /* LaunchScreen.storyboard */,
 				2FA2FC151DC6BEE300D94678 /* Info.plist */,
@@ -181,6 +223,9 @@
 				2F03B4E31DE000E6001157C6 /* threeStar.PNG */,
 				2F03B4E41DE000E6001157C6 /* twoStar.PNG */,
 				2F03B4EA1DE0168B001157C6 /* star.PNG */,
+				A0D776701DDEA32400DC9035 /* Database.swift */,
+				130B40C51DE393990092E12F /* ShareViewController.swift */,
+				130B40DD1DE396B00092E12F /* TravelJunkie-Bridging-Header.h */,
 			);
 			path = TravelJunkie;
 			sourceTree = "<group>";
@@ -210,9 +255,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FA2FC2E1DC6BEE700D94678 /* Build configuration list for PBXNativeTarget "TravelJunkie" */;
 			buildPhases = (
+				CD6A9D30C97A0A1F2577FA84 /* [CP] Check Pods Manifest.lock */,
 				2FA2FBFF1DC6BED100D94678 /* Sources */,
 				2FA2FC001DC6BED100D94678 /* Frameworks */,
 				2FA2FC011DC6BED100D94678 /* Resources */,
+				DD131715A867CA7B1857027E /* [CP] Embed Pods Frameworks */,
+				74D9591DD2A0CB65E2EC2CE5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FA2FC311DC6BEE700D94678 /* Build configuration list for PBXNativeTarget "TravelJunkieTests" */;
 			buildPhases = (
+				3E35CB6BADD0C2ECE6EA0085 /* [CP] Check Pods Manifest.lock */,
 				2FA2FC161DC6BEE400D94678 /* Sources */,
 				2FA2FC171DC6BEE400D94678 /* Frameworks */,
 				2FA2FC181DC6BEE400D94678 /* Resources */,
+				E9CF36664D907292AA99B105 /* [CP] Embed Pods Frameworks */,
+				1B866322B3D8A2125221D712 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,9 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FA2FC341DC6BEE700D94678 /* Build configuration list for PBXNativeTarget "TravelJunkieUITests" */;
 			buildPhases = (
+				23548A62285847C7D0910323 /* [CP] Check Pods Manifest.lock */,
 				2FA2FC211DC6BEE400D94678 /* Sources */,
 				2FA2FC221DC6BEE400D94678 /* Frameworks */,
 				2FA2FC231DC6BEE400D94678 /* Resources */,
+				B15BE71522CEB36C3CF23027 /* [CP] Embed Pods Frameworks */,
+				FC0B6F29606706CB693A986A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,6 +326,7 @@
 					2FA2FC021DC6BED100D94678 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = JUFV8398T9;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					2FA2FC191DC6BEE400D94678 = {
@@ -342,11 +397,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B866322B3D8A2125221D712 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23548A62285847C7D0910323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E35CB6BADD0C2ECE6EA0085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		74D9591DD2A0CB65E2EC2CE5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B15BE71522CEB36C3CF23027 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD6A9D30C97A0A1F2577FA84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD131715A867CA7B1857027E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9CF36664D907292AA99B105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0B6F29606706CB693A986A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FA2FBFF1DC6BED100D94678 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				130B40C61DE393990092E12F /* ShareViewController.swift in Sources */,
 				2F24BEDD1DDEC0D600CA04D3 /* LoginViewController.swift in Sources */,
 				2F03B4F11DE17982001157C6 /* NewUserViewController.swift in Sources */,
 				2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */,
@@ -354,15 +548,11 @@
 				2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */,
 				2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */,
 				2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */,
-				2F8FFB941DE396B6006C59EE /* Location.swift in Sources */,
 				2F03B4DF1DDFF9C4001157C6 /* MyTripTableViewController.swift in Sources */,
-				2F8FFB981DE3CFE0006C59EE /* NewLocViewController.swift in Sources */,
-				2F8FFB921DE39456006C59EE /* SingleTripTableViewController.swift in Sources */,
 				2FF9F7141DD9183000EF15DE /* LocationSearchTable.swift in Sources */,
 				2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */,
 				2F03B4DD1DDFEEA3001157C6 /* MainTripTableViewController.swift in Sources */,
 				A0D776711DDEA32400DC9035 /* Database.swift in Sources */,
-				2F8FFB961DE3A0E3006C59EE /* MySingleTripTableViewController.swift in Sources */,
 				2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,32 +695,48 @@
 		};
 		2FA2FC2F1DC6BEE700D94678 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5FA5FE44D422EDEA1276E14 /* Pods-TravelJunkie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JUFV8398T9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TravelJunkie",
+				);
 				INFOPLIST_FILE = TravelJunkie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NerdboyDevelopment.TravelJunkie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelJunkie/TravelJunkie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		2FA2FC301DC6BEE700D94678 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14B16722E7C41CFA849081A /* Pods-TravelJunkie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = JUFV8398T9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TravelJunkie",
+				);
 				INFOPLIST_FILE = TravelJunkie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.NerdboyDevelopment.TravelJunkie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TravelJunkie/TravelJunkie-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		2FA2FC321DC6BEE700D94678 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F55E786344646AAC0B9C2429 /* Pods-TravelJunkieTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -546,6 +752,7 @@
 		};
 		2FA2FC331DC6BEE700D94678 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B9E248B20163F8CB55DBFB /* Pods-TravelJunkieTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -561,6 +768,7 @@
 		};
 		2FA2FC351DC6BEE700D94678 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A2865BA482B0F8F529862AD /* Pods-TravelJunkieUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JUFV8398T9;
@@ -575,6 +783,7 @@
 		};
 		2FA2FC361DC6BEE700D94678 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEB77F57C340C86CB1A87946 /* Pods-TravelJunkieUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = JUFV8398T9;

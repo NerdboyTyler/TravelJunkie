@@ -11,9 +11,11 @@ import UIKit
 
 class Database {
     
+    let dbUsername = ""//Use database username string
+    let dbPassword = ""//use your database password string
     
     func userValidation(username: String, password: String){
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/loginValidation.php/\(username)/\(password)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/loginValidation.php/\(dbUsername)/\(dbPassword)/Users/\(username)/\(password)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -41,7 +43,7 @@ class Database {
     }
     
     func signupNewUser(username: String, password: String, firstname: String, lastname: String){
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/signup.php/\(username)/\(password)/\(firstname)/\(lastname)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/signup.php/\(dbUsername)/\(dbPassword)/Users/\(username)/\(password)/\(firstname)/\(lastname)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -73,7 +75,7 @@ class Database {
     
     func addTrip(userID: String, tripName: String, startDate: String, endDate: String, numOfLoc: Int, rating: Int){
         let modifiedTripName = tripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/addTrip.php/\(userID)/\(modifiedTripName)/\(startDate)/\(endDate)/\(numOfLoc)/\(rating)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/addTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedTripName)/\(startDate)/\(endDate)/\(numOfLoc)/\(rating)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -105,7 +107,7 @@ class Database {
     
     func getTripData (userID: String, tripName: String){
         let modifiedTripName = tripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/tripInfo.php/\(userID)/\(modifiedTripName)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/tripInfo.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedTripName)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -135,7 +137,7 @@ class Database {
     func modifyTripInfo(userID: String, newTripName: String, newStartDate: String, newEndDate: String, newNumOfLoc: Int, newRating: Int, oldTripName: String, oldStartDate: String, oldEndDate: String){
         let modifiedNewTripName = newTripName.replacingOccurrences(of: " ", with: "_")
         let modifiedOldTripName = oldTripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/updateTripInfo.php/\(userID)/\(modifiedNewTripName)/\(newStartDate)/\(newEndDate)/\(newNumOfLoc)/\(newRating)/\(modifiedOldTripName)/\(oldStartDate)/\(oldEndDate)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/updateTripInfo.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedNewTripName)/\(newStartDate)/\(newEndDate)/\(newNumOfLoc)/\(newRating)/\(modifiedOldTripName)/\(oldStartDate)/\(oldEndDate)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -167,7 +169,7 @@ class Database {
     
     func removeTrip (userID: String, tripName: String, startDate: String, endDate: String){
         let modifiedTripName = tripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/deleteTrip.php/\(userID)/\(tripName)/\(startDate)/\(endDate)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/deleteTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedTripName)/\(startDate)/\(endDate)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -197,10 +199,9 @@ class Database {
         task.resume()
     }
     
-    func addSubTrip (mainTripName: String, userID: String, startDate: String, endDate: String, subTripName: String, subTripDate: String, subTripPrice: String, subTripRating: Int) {
-        let modifiedMainTripName = subTripName.replacingOccurrences(of: " ", with: "_")
+    func addSubTrip (userID: String, subTripName: String, subTripDate: String, subTripPrice: String, subTripRating: Int) {
         let modifiedSubTripName = subTripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/subTrip.php/\(modifiedMainTripName)/\(userID)/\(startDate)/\(endDate)/\(modifiedSubTripName)/\(subTripDate)/\(subTripPrice)/\(subTripRating)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/subTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedSubTripName)/\(subTripDate)/\(subTripPrice)/\(subTripRating)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -232,7 +233,7 @@ class Database {
     
     func deleteSubTrip (userID: String, subTripName: String, subTripDate: String){
         let modifiedSubTripName = subTripName.replacingOccurrences(of: " ", with: "_")
-        let url = URL(string: "https://cs.okstate.edu/~ammarh/removeSubTrip.php/\(userID)/\(modifiedSubTripName)/\(subTripDate)")!
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/removeSubTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedSubTripName)/\(subTripDate)")!
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
         let task = session.dataTask(with: url) { (data, response, error) in
@@ -261,36 +262,4 @@ class Database {
         }
         task.resume()
     }
-    
-//    func getSubTripData (){
-//        let modifiedSubTripName = subTripName.replacingOccurrences(of: " ", with: "_")
-//        let url = URL(string: "https://cs.okstate.edu/~ammarh/removeSubTrip.php/\(dbUsername)/\(dbPassword)/Trips/\(userID)/\(modifiedSubTripName)/\(subTripDate)")!
-//        let config = URLSessionConfiguration.default
-//        let session = URLSession(configuration: config)
-//        let task = session.dataTask(with: url) { (data, response, error) in
-//            guard error == nil else {
-//                print("Error in session call: \(error)")
-//                return
-//            }
-//            guard let result = data else {
-//                print("No data received")
-//                return
-//            }
-//            // php not returning anything. might delete lines below if it dont cause crash.
-//            //===================
-//            do {
-//                if let json = try! JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [[String:Any]] {
-//                    if json.isEmpty == false {
-//                        print("JSON data returned: \(json)")
-//                    }else {
-//                        print("JSON data not returned: \(json)")
-//                    }
-//                }
-//            } catch {
-//                print("Error serializing JSON Data: \(error)")
-//            }
-//            //===================
-//        }
-//        task.resume()
-//    }
 }
