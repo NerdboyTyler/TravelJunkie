@@ -39,6 +39,10 @@
 		2FA2FC2A1DC6BEE600D94678 /* TravelJunkieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA2FC291DC6BEE600D94678 /* TravelJunkieUITests.swift */; };
 		2FF9F7141DD9183000EF15DE /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */; };
 		60AD65B61D04C07C05685D3F /* Pods_TravelJunkieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C484523E600B51E05520A8F /* Pods_TravelJunkieTests.framework */; };
+		A073DABA1DE3DED90073C90D /* SingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073DAB91DE3DED90073C90D /* SingleTripTableViewController.swift */; };
+		A073DABC1DE3DEEF0073C90D /* MySingleTripTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073DABB1DE3DEEF0073C90D /* MySingleTripTableViewController.swift */; };
+		A073DABE1DE3DEF80073C90D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073DABD1DE3DEF80073C90D /* Location.swift */; };
+		A073DAC01DE3DF020073C90D /* NewLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A073DABF1DE3DF020073C90D /* NewLocViewController.swift */; };
 		A0D776711DDEA32400DC9035 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D776701DDEA32400DC9035 /* Database.swift */; };
 		A0E72812CFAB98242370F0F9 /* Pods_TravelJunkieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE90165F5BCFE86A3BB3F7D /* Pods_TravelJunkieUITests.framework */; };
 		A621ABA2CD9D635A9E37E1AA /* Pods_TravelJunkie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6CA10A8F1595D7F9C8EE8 /* Pods_TravelJunkie.framework */; };
@@ -105,6 +109,10 @@
 		83F6CA10A8F1595D7F9C8EE8 /* Pods_TravelJunkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJunkie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94B9E248B20163F8CB55DBFB /* Pods-TravelJunkieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkieTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CE90165F5BCFE86A3BB3F7D /* Pods_TravelJunkieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelJunkieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A073DAB91DE3DED90073C90D /* SingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleTripTableViewController.swift; sourceTree = "<group>"; };
+		A073DABB1DE3DEEF0073C90D /* MySingleTripTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MySingleTripTableViewController.swift; sourceTree = "<group>"; };
+		A073DABD1DE3DEF80073C90D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A073DABF1DE3DF020073C90D /* NewLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLocViewController.swift; sourceTree = "<group>"; };
 		A0D776701DDEA32400DC9035 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		C14B16722E7C41CFA849081A /* Pods-TravelJunkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkie.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.release.xcconfig"; sourceTree = "<group>"; };
 		E5FA5FE44D422EDEA1276E14 /* Pods-TravelJunkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelJunkie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.debug.xcconfig"; sourceTree = "<group>"; };
@@ -209,6 +217,10 @@
 				2F03B4DE1DDFF9C4001157C6 /* MyTripTableViewController.swift */,
 				2F03B4DC1DDFEEA3001157C6 /* MainTripTableViewController.swift */,
 				2F03B4F21DE1887D001157C6 /* Main.storyboard */,
+				A073DAB91DE3DED90073C90D /* SingleTripTableViewController.swift */,
+				A073DABB1DE3DEEF0073C90D /* MySingleTripTableViewController.swift */,
+				A073DABD1DE3DEF80073C90D /* Location.swift */,
+				A073DABF1DE3DF020073C90D /* NewLocViewController.swift */,
 				2F03B4D01DDFEAB1001157C6 /* TripTableViewCell.swift */,
 				2F12E52A1DD24CBB00CC3B2F /* MapViewController.swift */,
 				2FF9F7131DD9183000EF15DE /* LocationSearchTable.swift */,
@@ -545,7 +557,9 @@
 				2F03B4F11DE17982001157C6 /* NewUserViewController.swift in Sources */,
 				2FA2FC091DC6BEDB00D94678 /* ViewController.swift in Sources */,
 				2FA2FC071DC6BEDB00D94678 /* AppDelegate.swift in Sources */,
+				A073DABE1DE3DEF80073C90D /* Location.swift in Sources */,
 				2F03B4ED1DE01759001157C6 /* NewViewController.swift in Sources */,
+				A073DABA1DE3DED90073C90D /* SingleTripTableViewController.swift in Sources */,
 				2F03B4D11DDFEAB1001157C6 /* TripTableViewCell.swift in Sources */,
 				2F12E52D1DD2ABA200CC3B2F /* LocationManager.swift in Sources */,
 				2F03B4DF1DDFF9C4001157C6 /* MyTripTableViewController.swift in Sources */,
@@ -553,6 +567,8 @@
 				2FA2FC0F1DC6BEE000D94678 /* TravelJunkie.xcdatamodeld in Sources */,
 				2F03B4DD1DDFEEA3001157C6 /* MainTripTableViewController.swift in Sources */,
 				A0D776711DDEA32400DC9035 /* Database.swift in Sources */,
+				A073DABC1DE3DEEF0073C90D /* MySingleTripTableViewController.swift in Sources */,
+				A073DAC01DE3DF020073C90D /* NewLocViewController.swift in Sources */,
 				2F12E52B1DD24CBB00CC3B2F /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
