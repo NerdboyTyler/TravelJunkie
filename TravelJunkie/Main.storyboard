@@ -421,7 +421,7 @@
                                     <color key="titleColor" red="0.9808778078" green="1" blue="0.2197017268" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="saveData:" destination="Nck-2S-WlC" eventType="touchUpInside" id="Dh3-hc-CMP"/>
+                                    <action selector="locSave:" destination="Nck-2S-WlC" eventType="touchUpInside" id="Npw-8g-18w"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -445,7 +445,6 @@
                         <outlet property="locField" destination="P0u-Rk-ESB" id="g8X-Wt-SrO"/>
                         <outlet property="priceField" destination="neM-Qe-1g9" id="7AQ-BW-s8J"/>
                         <outlet property="rateSlide" destination="SfI-KN-DUw" id="hyh-Jd-b8T"/>
-                        <outlet property="saveData" destination="jbb-Hw-bGX" id="kS0-Ov-Blb"/>
                         <outlet property="typeSegment" destination="oiI-B1-PE5" id="prk-yv-nPE"/>
                     </connections>
                 </viewController>

@@ -19,15 +19,15 @@ class NewLocViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
-    @IBAction func saveData(_ sender: Any) {
-        //send to Locations database with info on the tripID
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func locSave(_ sender: Any) {
+        //send to database with tripID and this info
+    }
 
     /*
     // MARK: - Navigation
