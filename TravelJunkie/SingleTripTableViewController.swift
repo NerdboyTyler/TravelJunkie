@@ -24,9 +24,9 @@ class SingleTripTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         //pickUpCars.append(Car(roadName: "DRGW", carNumber: 18347, location: "Marble City"))
-        lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: "Lodge"))
-        foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: "Food"))
-        sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: "Sight"))
+        lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: 1))
+        foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: 2))
+        sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: 3))
     }
 
     override func didReceiveMemoryWarning() {
