@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZQQ-gK-sVk">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ZQQ-gK-sVk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -220,7 +220,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lLY-eM-jSq">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Connect" id="fLd-0Y-LVp">
+                                    <barButtonItem image="Dropbox Filled-30" id="fLd-0Y-LVp">
                                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="connectToDropbox:" destination="S6A-fN-p46" id="TZs-HK-jNI"/>
@@ -232,7 +232,7 @@
                                             <action selector="shareButton:" destination="S6A-fN-p46" id="jxz-Em-vG1"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="download" id="oMc-7a-X4T">
+                                    <barButtonItem image="Download-30.png" id="oMc-7a-X4T">
                                         <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="download:" destination="S6A-fN-p46" id="IY7-Kk-360"/>
@@ -920,6 +920,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Download-30.png" width="30" height="30"/>
+        <image name="Dropbox Filled-30" width="30" height="30"/>
         <image name="fiveStar.PNG" width="284" height="40"/>
         <image name="homeImage.PNG" width="251" height="305"/>
         <image name="shareImage" width="80" height="80"/>
