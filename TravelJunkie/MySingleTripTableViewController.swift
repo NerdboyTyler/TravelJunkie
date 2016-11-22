@@ -14,7 +14,7 @@ class MySingleTripTableViewController: UITableViewController {
     var lodgeArray = [Location]()
     var foodArray = [Location]()
     var sightArray = [Location]()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
