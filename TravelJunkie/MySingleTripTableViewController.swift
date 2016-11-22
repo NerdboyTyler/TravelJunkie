@@ -1,4 +1,3 @@
-//
 //  MySingleTripTableViewController.swift
 //  TravelJunkie
 //
@@ -10,6 +9,12 @@ import UIKit
 
 class MySingleTripTableViewController: UITableViewController {
 
+    
+    
+    var userID = String()
+    var tripName = String()
+    var locationData = [NSDictionary]()
+    
     let locTypes = ["Lodging", "Food", "Sights"]
     var lodgeArray = [Location]()
     var foodArray = [Location]()
@@ -18,6 +23,7 @@ class MySingleTripTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getLocationData(locationName: tripName, user: userID)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
         
@@ -27,6 +33,35 @@ class MySingleTripTableViewController: UITableViewController {
         lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: 1))
         foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: 2))
         sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: 3))
+    }
+    
+    func getLocationData(locationName: String, user: String){
+        let modifiedLocationName = locationName.replacingOccurrences(of: " ", with: "_")
+        let url = URL(string: "https://cs.okstate.edu/~ammarh/locationInfo.php/\(modifiedLocationName)/\(user)")!
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: url){(data,response,error) in
+            guard error == nil else {
+                print("Error in session call: \(error)")
+                return
+            }
+            guard let result = data else {
+                print("No data received")
+                return
+            }
+            do {
+                if let json = try JSONSerialization.jsonObject(with: result, options: .allowFragments) as? [NSDictionary]
+                {
+                    print("JSON data returned:\(json)")
+                    self.locationData = json
+                    self.tableView.reloadData()
+                }
+            }
+            catch{
+                print("Error Serializing JSON Data: \(error)")
+            }
+        }
+        task.resume()
     }
     
     override func didReceiveMemoryWarning() {
@@ -68,10 +103,12 @@ class MySingleTripTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        
         // Configure the cell...
+        
         if(indexPath[0] == 0)
         {
+            
+            //cell.locationName.text = locationData[indexPath.row].value(forKey: "name") as? String
             cell.textLabel?.text = lodgeArray[indexPath.row].name
         }
         else if(indexPath[0] == 1)
@@ -123,14 +160,16 @@ class MySingleTripTableViewController: UITableViewController {
      }
      */
     
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+        if let destination = segue.destination as? NewLocViewController {
+            destination.username = userID
+            destination.parentTrip = tripName
+        }
+    }
+    
 
 }
