@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (4.0.1)
+  - APAddressBook (0.2.3):
+    - APAddressBook/Core (= 0.2.3)
+  - APAddressBook/Core (0.2.3)
+  - EVContactsPicker (0.5.1)
+  - SwiftyDropbox (4.1.1):
+    - Alamofire (~> 4.0.1)
+
+DEPENDENCIES:
+  - APAddressBook
+  - EVContactsPicker
+  - SwiftyDropbox
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  APAddressBook: 2a91bf05999548bea210ec9d1a68073f4dc8bfce
+  EVContactsPicker: ef3a5920a76c851dbbb22c8c0606e5e01f0e7123
+  SwiftyDropbox: dfcd4d308d32d74729255b48833db61acdfb9c23
+
+PODFILE CHECKSUM: 6f6fd6dfb6d06f9940556a0df680ed0fb58b1261
+
+COCOAPODS: 1.1.1

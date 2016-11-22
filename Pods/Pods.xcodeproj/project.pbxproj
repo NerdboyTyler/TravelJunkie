@@ -1,0 +1,1851 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EC4BE2EC34480A0E017B2A9B31BEE6 /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B36847E2165D4AB14DD1AEB8F535AF /* Files.swift */; };
+		0904FE6078E20D519F13A83277EB3D8E /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFFF22DE89A4505149E58207C66DB0D /* Async.swift */; };
+		0C40D48CD8BC0125473982FE1F4FFC25 /* OAuthMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8966C43D41A55F048443823F3863AF1 /* OAuthMobile.swift */; };
+		0C4F680C0D707222DC53067283D51F54 /* APDeprecated.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D652872A49B7574674C450C7BA3C8D4 /* APDeprecated.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B94C16CB2975927D699B9F7962F5BC /* Timeline.swift */; };
+		131CB20D22C89D0125998C93FAEBE384 /* APContactDataExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 52AD7AA4FFC8509A34A2E4A34826805D /* APContactDataExtractor.m */; };
+		13F732D7DD972C3FC13F5BDD7459EF08 /* APContactBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BDE2017BF1E48C936155D135061D451 /* APContactBuilder.m */; };
+		14912B2C0638035BA90F66B23B3EEA3A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45F52A7B0F8EAF4EEBAB80B4C4D2BA5F /* Users.swift */; };
+		15A85FA9F95F284C45587CBD96883231 /* EVBubbleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E274CFF26568E2056C6A83C076176 /* EVBubbleColor.swift */; };
+		15F08193174D25A990D2A74B7CC3BF81 /* APAddressBookAccessRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 74233930F4E96F354C2A31EB771AFB48 /* APAddressBookAccessRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17F2942B5C7428586BFD9EC8FECCD0E2 /* EVPickedContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5C6701257BE67FF93EDAEE8C263874 /* EVPickedContactsView.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAAABD9F49E73A4F012314164BAB5959 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F1D014A650E24BC27025F9622A086C8 /* SwiftyDropbox.h in Headers */ = {isa = PBXBuildFile; fileRef = D9B4F7C1B2DFC4EEDC3A0618A7DD9D9A /* SwiftyDropbox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21D75140B2E9076F4C1F2A9D13F9654C /* icon-checkbox-selected-green-25x25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D8EB5325F6F0BA60A506B8AD86578E9 /* icon-checkbox-selected-green-25x25@2x.png */; };
+		250DA5D8C8F630AA0B97B3B6314F48EC /* APContactBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 45DC147D8ED9308E4B69372B5072B803 /* APContactBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25BDC493215B6922911A0322923EC435 /* EVContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD28B5B25B59A4CEF742541132284930 /* EVContact.swift */; };
+		26799E0AEDE0ACD98F9D672EB5673879 /* APThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C7CB7C04F24BE325A7DD0FB875B119 /* APThread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D01695FFD144C93937FB7F2344154A7 /* Pods-TravelJunkieUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14501079EF53C38CF46BDBCC58F87D9F /* Pods-TravelJunkieUITests-dummy.m */; };
+		2E9A9FA859970A80E8177A81B45C5FA9 /* APRecordDate.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE1479F11B7A028D94BB280485B8A1A /* APRecordDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F8C8A822847C133DA0280CF394793DB /* APAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBABE49810D82BC942CE270981D2FE /* APAddressBook.m */; };
+		3283411313E87CD102B08EECE6FB46E1 /* TeamCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6D3B1EB3820B259DE50F019570D86B /* TeamCommon.swift */; };
+		3351ADB9970851368427EB89BF55CC95 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A37DE03A52A7A93BA39C675D525BD97 /* Auth.swift */; };
+		3475CACB71D521A6771494B457F618FE /* EVContactsPickerViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = 540BF9B8BA9E9EF13966D9C11D7B155F /* EVContactsPickerViewController.xib */; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E057818782D4A905E78FB6D75E90BB /* TaskDelegate.swift */; };
+		3ABBC0F8C3712C28956971F2CEC92B14 /* APSocialServiceHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 683EEF563FC8069D0F91B2CA9BB72905 /* APSocialServiceHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D2CCD0A48226F3E5BF7F5CCBE852C2E /* TeamPolicies.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF547127EB9D06EF9BFAD3D44B35C5AE /* TeamPolicies.swift */; };
+		3DE7829D6FE1184471EF95B921840B6A /* Properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7012C11D50BCFBDC4B583B3D3E0B315 /* Properties.swift */; };
+		3EEE51D5B509C734BBAD8D622E0BBE65 /* APRelatedPerson.h in Headers */ = {isa = PBXBuildFile; fileRef = E394F3DFEF6ADE3550B331557C343CFD /* APRelatedPerson.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		485DFE0A041A7F4D930AA26B53FE52D6 /* icon-checkbox-unselected-25x25@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C56F1827A4D596D40B3F16B3B5EFFFE /* icon-checkbox-unselected-25x25@2x.png */; };
+		49CC8F53718897860AF1CA8293D55D20 /* APEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A2B90CDAFEAF0010531B28ADA43BDC /* APEmail.m */; };
+		4B6BC4DFC78D087218A41B4D659549EC /* APContactDataExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9510B54676B1F15B9501AC9D4B7F492D /* APContactDataExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F11747B289E20D4E39F96C8FDCC038C /* APAddressBookBaseRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = D8B47C8A6E076157A0A74ACF83672278 /* APAddressBookBaseRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FF6E8980C97DA66932E78E5F7CE56AF /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CD0FA7EE743F01B3A6385702606A408 /* Alamofire.framework */; };
+		51F15C0B449B9B37FE4907A46F11ADBD /* APPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 81FFFC426D779B46ECE274CCDBEC4FFF /* APPhone.m */; };
+		52FA3205E08F65BE07E9FB7B3D986F13 /* APJob.h in Headers */ = {isa = PBXBuildFile; fileRef = 2639FEDDFBE9C8EC5704E59DCA1044F0 /* APJob.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5376779CEE9C8F9497ABF7D51FE56CA4 /* APEmail.h in Headers */ = {isa = PBXBuildFile; fileRef = B2351AA256C9BBD61B39F15FC8A6956A /* APEmail.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7B39CF3973122A58EEC693AEE21528 /* Request.swift */; };
+		553521E6F76398B56A93BDAC608518F0 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EAE53D9AA85AF497AC22AAE9030BB1 /* AddressBook.framework */; };
+		5633EC635210732C0118C21F7F0E4535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		569D4C517AA199C20B92B4770F3DD878 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EE00ACADB193118F6C3740909E6AE8 /* Base.swift */; };
+		5888C2A15A25CA4BB5D482D3898E5D6C /* APAddressBookExternalChangeRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE4D48739796C3E5B5A47249764B5C9 /* APAddressBookExternalChangeRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A17224617474E50AF6048EF3CACB390 /* APAddressBook.h in Headers */ = {isa = PBXBuildFile; fileRef = A73D75337388CA8D44FD3329E275F85A /* APAddressBook.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CF3EF0272C516AA745DD8FB10BB0CF0 /* APImageExtractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D9B486D86BC101C810D4543DD25EED4 /* APImageExtractor.m */; };
+		5EA7606B801AE28270761AF7033C8BB5 /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2E3965275ED17E8452F4B96F9DCD05 /* FilesRoutes.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA323203173BD861F0E0509F77E70E66 /* DispatchQueue+Alamofire.swift */; };
+		6159CCA45A0FA42E4F72B8900932D6F3 /* DropboxClientsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDBC057457760D4A7F6E4A4D2CD5E6A /* DropboxClientsManager.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF0AEBE809A28507E6169AA62C26142 /* ServerTrustPolicy.swift */; };
+		63AD029580603073B402DA372A866157 /* APRecordDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E2353D6363638A029128EDC612C26F /* APRecordDate.m */; };
+		6499728A58462027C7DF322197CF98AE /* APSocialServiceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E802FAFEC33135CCE18D1671195108E8 /* APSocialServiceHelper.m */; };
+		68387166AB8FE562620F2AE54FBF2259 /* icon-checkbox-selected-green-25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = 69F334EF09837674A0DB1F660C876FDA /* icon-checkbox-selected-green-25x25.png */; };
+		69A1B2C379D742B12180671C5A64E2AE /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39AFE1564671B668EA6FA27AA172CE3 /* OAuth.swift */; };
+		6BCF522E67A01A08DC839FFDE4CA90B8 /* EVContactsPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5535B8230ACEB71D8278F238D9D0B5 /* EVContactsPickerTableViewCell.swift */; };
+		6E74DC74D6FEC1E1C077D16EE726E663 /* APSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F68EBB507003660E93F12B09025C0FD /* APSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70386ACED001C3EFF1008BB725A099AF /* Pods-TravelJunkie-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B59104C3279129790D3902F81A8D1B3D /* Pods-TravelJunkie-dummy.m */; };
+		769C2ED7F65883D18F9466C63DE61872 /* EVContactBubbleDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618BD086AC76BA3A97865B241100E4AD /* EVContactBubbleDelegate.swift */; };
+		7937B09F6DF6534D9A0FE3649FD0DBC7 /* BaseTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43C6F75817E108E33C45766E61714E /* BaseTeam.swift */; };
+		79C79977FBEE7539DF0BD11A7EE1DABF /* APSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5495EE402FB58DD7F45DE2DE2E6201C6 /* APSource.m */; };
+		7B290E22FA4C7E54452F4AE529680E08 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB117888B60385ECC400C25ED8794C7 /* SessionDelegate.swift */; };
+		7C749A4EE44A9EEF094BB2A81422DCD2 /* EVContactsPickerAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DF31F5ED2BE10C499E41116A3A6EFE5E /* EVContactsPickerAssets.bundle */; };
+		7D7E7564A04F7B2AC1956B43B190105B /* APThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 53CC86A9A6840E893A026A2020FA1E64 /* APThread.m */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755308748F9D683461958914CA014E64 /* Result.swift */; };
+		7F5C7917FD687381D26D14163C286A6C /* APContactListBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 482B75B5B8507409B3FF8A12A924024A /* APContactListBuilder.m */; };
+		8266CCE9A6323A35B10BFEACE20A49B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		82FC6BA642B784AF15504B3CAD6112F5 /* APAddressBook-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B1E95ECA1E125ACB3DC2B184E622 /* APAddressBook-dummy.m */; };
+		838BCE135CC759D7B45E67394519179D /* EVContactsPickerTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 94334D305F36AE26E63FA0C1F2115E65 /* EVContactsPickerTableViewCell.xib */; };
+		843513ADC01D2246AB47D538614D8199 /* APContact.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2EB5448D4C080623DF1A994371B0CE /* APContact.m */; };
+		84482C2D1274B555DE5ADF2FFE5F0E90 /* Pods-TravelJunkie-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 739099E79997BB7778BE7120FAB78C10 /* Pods-TravelJunkie-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CEE105C4D14A5818E1CBA13F179B582 /* APAddressBookRefWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9ED3C0C667CFEB1E745F1969995E8C /* APAddressBookRefWrapper.m */; };
+		8D6AA1AC2CB4A9476910AA2BA344E445 /* APAddressBookContactsRoutine.h in Headers */ = {isa = PBXBuildFile; fileRef = A6058892F0C9D10CB6AC1D0D21A7CEBF /* APAddressBookContactsRoutine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F2237259705525A815406C62605A749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E191050B37836B61C21B4F9A52CE6F19 /* UIKit.framework */; };
+		8F761D5A194151441AD55702396B1CD2 /* Pods-TravelJunkieTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A090AFBDA74C9343AD4B4C2EA7EDE593 /* Pods-TravelJunkieTests-dummy.m */; };
+		91B7271F7584A736045353DD597E0E0B /* EVContactsPickerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A609A7446810EA3CE4B7F4A60512084 /* EVContactsPickerConstants.swift */; };
+		947814CD8D4928B0BA67F85B2910A63F /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BD97A2ED2004B852CBA2132823567 /* Sharing.swift */; };
+		951DCCDD198B15FF20E2C323ABDB8B96 /* APAddressBookContactsRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 527E28A7CC03931E1DE71AD6AA6E229B /* APAddressBookContactsRoutine.m */; };
+		97F9CA28BBDCE47B01CA3C4BF093DDC4 /* DropboxTeamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01BD9D902570BD5D488259408C12A8F7 /* DropboxTeamClient.swift */; };
+		98831FEAB67B7ED6153AFB4B8C9C8C1C /* DropboxTransportClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D997959299A727934454C644EA5CC19 /* DropboxTransportClient.swift */; };
+		9A0798F0C30A434ABECCB3ADCC4C739E /* SwiftyDropbox-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E85D97EB648B4BA924A57612B5F9FE /* SwiftyDropbox-dummy.m */; };
+		9AA23906978E0AD36164F55788789307 /* APSocialProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 0275714EC5760E1FF6C0739F13512981 /* APSocialProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9AE2468675A507D8247E012DF08AA77E /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579CD23496BB872F552965EFD895889 /* SharingRoutes.swift */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4B147A610E70E686F525DB1F904034 /* AFError.swift */; };
+		9F92A19CB2F84E01364786D785293C18 /* APContact.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D9351C0E193919A84039AEA6C9CE87C /* APContact.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		A107925322570E554E94DD533C74C006 /* Webkit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF23692F655ABABD9C66278198ED5EB /* Webkit.framework */; };
+		A11016AE41A6D1B487F3CCB758CB666A /* StoneValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0001FEF238DDB1CB72262147B5552D15 /* StoneValidators.swift */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DBF45E086B0FBBA22A48E83CA68CC8 /* NetworkReachabilityManager.swift */; };
+		A30192366A89905406E98A0AC3BF73A0 /* icon-avatar-60x60.png in Resources */ = {isa = PBXBuildFile; fileRef = 500E0BB9A144A99B05E4C09430A89329 /* icon-avatar-60x60.png */; };
+		A3B68C6BCBC03EA93F24E9ECFCF2E30D /* APSocialProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D59ADFA30956884734FC4C8DB4C473B /* APSocialProfile.m */; };
+		A6F3B18E1FFB20277B697FA9C2C6E226 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0B52F0C9C7E554440E576DD16E57A /* Common.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E8E0698E9888697927234D1F69CEC0C /* Alamofire-dummy.m */; };
+		AB5B7AFFECB8E63F2F4789836285C5A5 /* APImageExtractor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E599CB65B22C55AEB3918304EFBB235 /* APImageExtractor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD89B479441D2A63C4438B6DC302F093 /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40444748CD2E211F951688801C687D5 /* DropboxClient.swift */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01777BA50290DBF4D6EFD899AA00AB66 /* SessionManager.swift */; };
+		AFB9B9BA3A7D9349967DDD27B1AB5955 /* APAddressBookRefWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DC6E6268C2CBD7C701A55C67B347473 /* APAddressBookRefWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B045B961C5FBA8FA97077B6B7EE0EA38 /* APAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 922DECB24289BF195B125555E51AD1F8 /* APAddress.m */; };
+		B07EA60E9B6A892F6DDF7C21F2B940C9 /* APJob.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D329757CD04AD2136FEC3200376BD8 /* APJob.m */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049A1B3D77A007BDF27F20148EBAE1F5 /* MultipartFormData.swift */; };
+		BA4E23B72AE5235FC7880600A53C6336 /* EVContactsPicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7AEA59769389B6CB9338E82D8B03CA2 /* EVContactsPicker-dummy.m */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F8099EB16FA93F8D115DEFD8FAC87 /* Validation.swift */; };
+		BD6F109EB24CB270B950039E30756E39 /* icon-avatar-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A43B04AC978F73D61BCD2A0FD36DB873 /* icon-avatar-60x60@2x.png */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90931B73387D2951E8D1B71E8DEF82A4 /* ParameterEncoding.swift */; };
+		BE9FBE763372EEFDD89F9509A35ACEEB /* APAddressBookBaseRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2C0CBD4ECC1BB20EFBED407CA8A72 /* APAddressBookBaseRoutine.m */; };
+		BEDC24FE35DAFC844418C626E9118C21 /* APContactListBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 181C4E7725A20B7C41445E7A36063A75 /* APContactListBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C12AA952AFA82B18BB24536B9FD35699 /* APAddressBook-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 318CB8771031CB5A0A8C6658AFA61867 /* APAddressBook-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C14D34925F8C861FB6C974FF920C12EA /* APName.m in Sources */ = {isa = PBXBuildFile; fileRef = 68F389B09B5A951BE46E6AD82F964271 /* APName.m */; };
+		C38B90F4239E68ACCDF6E5A12B759794 /* AuthRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D2687A40B53A9A1614E14B56227E6DF /* AuthRoutes.swift */; };
+		C793AF19D42DB63B17EA7AF1772C52B0 /* EVCContactsPickerDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950EBFC50E01A7ACB9CBF71E4E2ACABD /* EVCContactsPickerDataSourceProtocol.swift */; };
+		C8638BA44D0827C7BC4244F2AC7C90F7 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9570A3B87D4D62EC29CEBE9A2F2FD5E6 /* Team.swift */; };
+		CB1F9B017823F1C82A0F2E67CA2E5812 /* APAddressBookExternalChangeRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CE8A19DEE80698D71D0DE813296D64 /* APAddressBookExternalChangeRoutine.m */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1BEFF88401E1F0483609394A161A7D /* Response.swift */; };
+		CC24B2A0A948AF1869B63B2701412258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		D3417FFE0DE976724A51A4A7F2B990CC /* APPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA9C86ED08F9B5A4CD0032ED82BE3C6 /* APPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4F63980AF81B4392E065B8A852E9BF9 /* APAddressBookExternalChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E200E85CB717C927FC881B0E8ACE567C /* APAddressBookExternalChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA191FC9BAEF91CA3C71EE61310976F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		DBC1404A333D8319163BF228F98B0DF5 /* APTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = EACC480BDAC54BB4A701C71995CD9B4A /* APTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC904E384C8AE46067B04EAB2F4465F7 /* APRelatedPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A15480FB3F25874CFBC8A854A1979A /* APRelatedPerson.m */; };
+		DCE1FEFCC93BE9716218F73064002CDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */; };
+		DDFB9DFC4DF9C00B344436C5549ADE4D /* APContactDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 65AD7B69B44E7C22E99A52ECDC12434A /* APContactDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE18CCA0BD67934E70CF6F8ACFFB01B9 /* APAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = 9499FE3DBD4569B4291081E5611A27EF /* APAddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE1E4CDDC301DBF2D1E05EDE04F12BFF /* icon-checkbox-unselected-25x25.png in Resources */ = {isa = PBXBuildFile; fileRef = C6A588C20D7275802CECCBBFE339F400 /* icon-checkbox-unselected-25x25.png */; };
+		E54AD576F666C71D3FACFDDC16148CF6 /* EVContactsPickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA317A86DD62ACE880351EB2FB448376 /* EVContactsPickerDelegate.swift */; };
+		E74A0467366691FE992AA38111D88BFF /* APContactDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F14D4BFA85E210BFCC4EB80E7920FBA /* APContactDate.m */; };
+		E7E705DA5296783D64509B056295AF6B /* EVContactsPicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 50481875A0698B0F5B04E5B19B698960 /* EVContactsPicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8FE1787E39C7705A20846D768F640F9 /* EVContactBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA03DEA5E2B901B47F800818B3396A61 /* EVContactBubble.swift */; };
+		E9B5E5A3F04F5E5E7CE8C49B14F35B25 /* APAddressBookAccessRoutine.m in Sources */ = {isa = PBXBuildFile; fileRef = E616CC7CCDB495934D34CA9B02240DB5 /* APAddressBookAccessRoutine.m */; };
+		EAC8013792FE278240CFB5B3F830A98E /* APName.h in Headers */ = {isa = PBXBuildFile; fileRef = 01851DC2FFBC974DD332F0F8D45C6F77 /* APName.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5BDBE86D295B6ECC47F11650404FF2 /* EVContactsPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232B8483737B19EAE776A3D4CF5117CB /* EVContactsPickerViewController.swift */; };
+		EB6BDBE79E4C98C942AAF23922919A7D /* StoneSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C3AD585340BEB15C963B44C0430A59 /* StoneSerializers.swift */; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BFC36797F70F9C4D08088CBE67B0FAA /* Notifications.swift */; };
+		F123A8AED8658F59236F8F4F3D156DA6 /* Pods-TravelJunkieTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F04C404304F984689F27E7D2FC5A05A /* Pods-TravelJunkieTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30CA7DCC8B69DB9458381CFB6B1454B /* StoneBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A43BB066744CA2B32FB873ACC00EDF /* StoneBase.swift */; };
+		F4FA2ECD0DC3179E93B37243B740DFC6 /* Pods-TravelJunkieUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 910B4A18D925A940FBD320EA833C2653 /* Pods-TravelJunkieUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CBD4E4ACE46C7F0AC7619133B1AF37 /* TeamRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252297785405D6EBF5FADD3CE5CFD76A /* TeamRoutes.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC0E61744EB409EE506B2AF7BD7F7DA /* ResponseSerialization.swift */; };
+		F74ACA162095EA01E3758F7F8E589CE8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 129385A3F29D1225408CD7BD00E33BA5 /* SystemConfiguration.framework */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6CC08DFE4B5A23AB70F5E4F32B44B0 /* Alamofire.swift */; };
+		F95C557AFEA61BADBA4BA39DAFA573FF /* SwiftyDropbox-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DB7EAFB1D9A54FB3E7F322DA243985E /* SwiftyDropbox-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB01C40A29F0AD3FA4FA614D4983A6D3 /* EVPickedContactsViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4591A6A883D8A406E0E46CF23D206A /* EVPickedContactsViewDelegate.swift */; };
+		FB23B96C0153EE9E63C70BDDB7C221AA /* NSBundle+EVBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EBAB1502D18E837087FF1305EF32C8 /* NSBundle+EVBundle.swift */; };
+		FD6830A19BAEE67C2A2AD2FCB7AE8A2A /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A1955C390ECF2E042C5BA6776438CC /* UsersRoutes.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FACD4DFC9E66B3CB516AD201BA51195 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		83C0DAB2E538328D2855ED10B59D172A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E0BEE6BAB87A66D72D22DBF0C0895A7;
+			remoteInfo = EVContactsPicker;
+		};
+		90ACDF7BD472FE3F9B91B1FD2DAA424E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+		BA66CBCBEB4F012DBA962F3EADBA53A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B20CAEEA320DAD747BB08D1128BDD90;
+			remoteInfo = APAddressBook;
+		};
+		CA1F1C0EC20CB921890BD5217CDE68CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95F6B6675F33D6CD1EB0AE9BC979D23A;
+			remoteInfo = SwiftyDropbox;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0001FEF238DDB1CB72262147B5552D15 /* StoneValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoneValidators.swift; path = Source/SwiftyDropbox/PlatformNeutral/StoneValidators.swift; sourceTree = "<group>"; };
+		01777BA50290DBF4D6EFD899AA00AB66 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		01851DC2FFBC974DD332F0F8D45C6F77 /* APName.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APName.h; path = Pod/Core/Public/Models/APName.h; sourceTree = "<group>"; };
+		01BD9D902570BD5D488259408C12A8F7 /* DropboxTeamClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropboxTeamClient.swift; path = Source/SwiftyDropbox/PlatformNeutral/DropboxTeamClient.swift; sourceTree = "<group>"; };
+		0275714EC5760E1FF6C0739F13512981 /* APSocialProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialProfile.h; path = Pod/Core/Public/Models/APSocialProfile.h; sourceTree = "<group>"; };
+		049A1B3D77A007BDF27F20148EBAE1F5 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		08D53AAC6A044B6DD8C7873C5A93209A /* Pods-TravelJunkieUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelJunkieUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0A37DE03A52A7A93BA39C675D525BD97 /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Source/SwiftyDropbox/PlatformNeutral/Auth.swift; sourceTree = "<group>"; };
+		0C5C6701257BE67FF93EDAEE8C263874 /* EVPickedContactsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVPickedContactsView.swift; path = Pod/Classes/EVPickedContactsView.swift; sourceTree = "<group>"; };
+		0D997959299A727934454C644EA5CC19 /* DropboxTransportClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropboxTransportClient.swift; path = Source/SwiftyDropbox/PlatformNeutral/DropboxTransportClient.swift; sourceTree = "<group>"; };
+		0DC6E6268C2CBD7C701A55C67B347473 /* APAddressBookRefWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookRefWrapper.h; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.h; sourceTree = "<group>"; };
+		0FF3DAFA25058C0DDB457B215735C687 /* Pods-TravelJunkieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkieTests.release.xcconfig"; sourceTree = "<group>"; };
+		129385A3F29D1225408CD7BD00E33BA5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		14501079EF53C38CF46BDBCC58F87D9F /* Pods-TravelJunkieUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelJunkieUITests-dummy.m"; sourceTree = "<group>"; };
+		181C4E7725A20B7C41445E7A36063A75 /* APContactListBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactListBuilder.h; path = Pod/Core/Private/Builders/APContactListBuilder.h; sourceTree = "<group>"; };
+		18CF54E892D7EBBB0CAAC243A6AF9755 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		19207E93689AE0FBD8725AC4854AB2CB /* Pods-TravelJunkie-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkie-resources.sh"; sourceTree = "<group>"; };
+		1B43C6F75817E108E33C45766E61714E /* BaseTeam.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseTeam.swift; path = Source/SwiftyDropbox/PlatformNeutral/BaseTeam.swift; sourceTree = "<group>"; };
+		1C56F1827A4D596D40B3F16B3B5EFFFE /* icon-checkbox-unselected-25x25@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-checkbox-unselected-25x25@2x.png"; path = "Pod/Assets/icon-checkbox-unselected-25x25@2x.png"; sourceTree = "<group>"; };
+		1D59ADFA30956884734FC4C8DB4C473B /* APSocialProfile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialProfile.m; path = Pod/Core/Public/Models/APSocialProfile.m; sourceTree = "<group>"; };
+		1FA4B70EF60497A6D3C5374B6D0D534F /* Pods_TravelJunkieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelJunkieUITests.framework; path = "Pods-TravelJunkieUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D21EBC89A35D5EEFB357D637CD1EC8 /* EVContactsPicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EVContactsPicker.xcconfig; sourceTree = "<group>"; };
+		21F0B52F0C9C7E554440E576DD16E57A /* Common.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Common.swift; path = Source/SwiftyDropbox/PlatformNeutral/Common.swift; sourceTree = "<group>"; };
+		232B8483737B19EAE776A3D4CF5117CB /* EVContactsPickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactsPickerViewController.swift; path = Pod/Classes/EVContactsPickerViewController.swift; sourceTree = "<group>"; };
+		252297785405D6EBF5FADD3CE5CFD76A /* TeamRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamRoutes.swift; path = Source/SwiftyDropbox/PlatformNeutral/TeamRoutes.swift; sourceTree = "<group>"; };
+		25BAE7F14AE438B981EAA2DC022F19A3 /* Pods-TravelJunkieTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelJunkieTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2639FEDDFBE9C8EC5704E59DCA1044F0 /* APJob.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APJob.h; path = Pod/Core/Public/Models/APJob.h; sourceTree = "<group>"; };
+		27E2353D6363638A029128EDC612C26F /* APRecordDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRecordDate.m; path = Pod/Core/Public/Models/APRecordDate.m; sourceTree = "<group>"; };
+		2941E8ADC88C8B933C9FB4037BA73987 /* APAddressBook.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APAddressBook.xcconfig; sourceTree = "<group>"; };
+		2A4BD97A2ED2004B852CBA2132823567 /* Sharing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sharing.swift; path = Source/SwiftyDropbox/PlatformNeutral/Sharing.swift; sourceTree = "<group>"; };
+		2A7B39CF3973122A58EEC693AEE21528 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		2C6F33FA42EA15C1F05E568D0F05179E /* Pods-TravelJunkie-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkie-frameworks.sh"; sourceTree = "<group>"; };
+		2D9B486D86BC101C810D4543DD25EED4 /* APImageExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APImageExtractor.m; path = Pod/Core/Private/Extractors/APImageExtractor.m; sourceTree = "<group>"; };
+		2F14D4BFA85E210BFCC4EB80E7920FBA /* APContactDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDate.m; path = Pod/Core/Public/Models/APContactDate.m; sourceTree = "<group>"; };
+		318CB8771031CB5A0A8C6658AFA61867 /* APAddressBook-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-umbrella.h"; sourceTree = "<group>"; };
+		3461B1E95ECA1E125ACB3DC2B184E622 /* APAddressBook-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APAddressBook-dummy.m"; sourceTree = "<group>"; };
+		39A1955C390ECF2E042C5BA6776438CC /* UsersRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UsersRoutes.swift; path = Source/SwiftyDropbox/PlatformNeutral/UsersRoutes.swift; sourceTree = "<group>"; };
+		3A609A7446810EA3CE4B7F4A60512084 /* EVContactsPickerConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactsPickerConstants.swift; path = Pod/Classes/EVContactsPickerConstants.swift; sourceTree = "<group>"; };
+		3B52726AC9574450F484A45EC370185D /* Pods-TravelJunkie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkie.release.xcconfig"; sourceTree = "<group>"; };
+		3B91A85A37F50C5D382C2C0AB77EEF1E /* Pods-TravelJunkie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkie.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA9C86ED08F9B5A4CD0032ED82BE3C6 /* APPhone.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APPhone.h; path = Pod/Core/Public/Models/APPhone.h; sourceTree = "<group>"; };
+		3CD0FA7EE743F01B3A6385702606A408 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D8EB5325F6F0BA60A506B8AD86578E9 /* icon-checkbox-selected-green-25x25@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-checkbox-selected-green-25x25@2x.png"; path = "Pod/Assets/icon-checkbox-selected-green-25x25@2x.png"; sourceTree = "<group>"; };
+		3DAA77F33D77730D88F777CA6991D2D4 /* Pods-TravelJunkie-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TravelJunkie-acknowledgements.markdown"; sourceTree = "<group>"; };
+		414F8099EB16FA93F8D115DEFD8FAC87 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		42869FB3ED354C78772A60A5D85B8BB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		432762EA0B9507705FA8D36790B24748 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		43A43BB066744CA2B32FB873ACC00EDF /* StoneBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoneBase.swift; path = Source/SwiftyDropbox/PlatformNeutral/StoneBase.swift; sourceTree = "<group>"; };
+		45DC147D8ED9308E4B69372B5072B803 /* APContactBuilder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactBuilder.h; path = Pod/Core/Private/Builders/APContactBuilder.h; sourceTree = "<group>"; };
+		45F52A7B0F8EAF4EEBAB80B4C4D2BA5F /* Users.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Users.swift; path = Source/SwiftyDropbox/PlatformNeutral/Users.swift; sourceTree = "<group>"; };
+		482B75B5B8507409B3FF8A12A924024A /* APContactListBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactListBuilder.m; path = Pod/Core/Private/Builders/APContactListBuilder.m; sourceTree = "<group>"; };
+		48CBABE49810D82BC942CE270981D2FE /* APAddressBook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBook.m; path = Pod/Core/Public/APAddressBook.m; sourceTree = "<group>"; };
+		4978A00B8FCFE1BA9B4252C9FC369BA0 /* APAddressBook-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APAddressBook-prefix.pch"; sourceTree = "<group>"; };
+		4A5921FBE64C9BCE42CF293B15DE1B90 /* APAddressBook.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = APAddressBook.framework; path = APAddressBook.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB117888B60385ECC400C25ED8794C7 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		4B2474607FF0702260BC1C375DDDBD6E /* SwiftyDropbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyDropbox.framework; path = SwiftyDropbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE4D48739796C3E5B5A47249764B5C9 /* APAddressBookExternalChangeRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeRoutine.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.h; sourceTree = "<group>"; };
+		4E8E0698E9888697927234D1F69CEC0C /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		500E0BB9A144A99B05E4C09430A89329 /* icon-avatar-60x60.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-avatar-60x60.png"; path = "Pod/Assets/icon-avatar-60x60.png"; sourceTree = "<group>"; };
+		50481875A0698B0F5B04E5B19B698960 /* EVContactsPicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVContactsPicker-umbrella.h"; sourceTree = "<group>"; };
+		50C7CB7C04F24BE325A7DD0FB875B119 /* APThread.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APThread.h; path = Pod/Core/Private/Thread/APThread.h; sourceTree = "<group>"; };
+		527E28A7CC03931E1DE71AD6AA6E229B /* APAddressBookContactsRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookContactsRoutine.m; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.m; sourceTree = "<group>"; };
+		52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		52AD7AA4FFC8509A34A2E4A34826805D /* APContactDataExtractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactDataExtractor.m; path = Pod/Core/Private/Extractors/APContactDataExtractor.m; sourceTree = "<group>"; };
+		53CC86A9A6840E893A026A2020FA1E64 /* APThread.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APThread.m; path = Pod/Core/Private/Thread/APThread.m; sourceTree = "<group>"; };
+		540BF9B8BA9E9EF13966D9C11D7B155F /* EVContactsPickerViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EVContactsPickerViewController.xib; path = Pod/Classes/EVContactsPickerViewController.xib; sourceTree = "<group>"; };
+		5495EE402FB58DD7F45DE2DE2E6201C6 /* APSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSource.m; path = Pod/Core/Public/Models/APSource.m; sourceTree = "<group>"; };
+		5547ABE195BD5D51CE737A01988E69C3 /* SwiftyDropbox.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyDropbox.modulemap; sourceTree = "<group>"; };
+		5BDE2017BF1E48C936155D135061D451 /* APContactBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContactBuilder.m; path = Pod/Core/Private/Builders/APContactBuilder.m; sourceTree = "<group>"; };
+		5BFC36797F70F9C4D08088CBE67B0FAA /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		5C5535B8230ACEB71D8278F238D9D0B5 /* EVContactsPickerTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactsPickerTableViewCell.swift; path = Pod/Classes/EVContactsPickerTableViewCell.swift; sourceTree = "<group>"; };
+		5F04C404304F984689F27E7D2FC5A05A /* Pods-TravelJunkieTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelJunkieTests-umbrella.h"; sourceTree = "<group>"; };
+		5F85ECAF21A85B28852F83156E196D7A /* Pods-TravelJunkieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		618BD086AC76BA3A97865B241100E4AD /* EVContactBubbleDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactBubbleDelegate.swift; path = Pod/Classes/EVContactBubbleDelegate.swift; sourceTree = "<group>"; };
+		61E85D97EB648B4BA924A57612B5F9FE /* SwiftyDropbox-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyDropbox-dummy.m"; sourceTree = "<group>"; };
+		6579CD23496BB872F552965EFD895889 /* SharingRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SharingRoutes.swift; path = Source/SwiftyDropbox/PlatformNeutral/SharingRoutes.swift; sourceTree = "<group>"; };
+		657E274CFF26568E2056C6A83C076176 /* EVBubbleColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVBubbleColor.swift; path = Pod/Classes/EVBubbleColor.swift; sourceTree = "<group>"; };
+		65AD7B69B44E7C22E99A52ECDC12434A /* APContactDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDate.h; path = Pod/Core/Public/Models/APContactDate.h; sourceTree = "<group>"; };
+		683EEF563FC8069D0F91B2CA9BB72905 /* APSocialServiceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSocialServiceHelper.h; path = Pod/Core/Private/Helpers/APSocialServiceHelper.h; sourceTree = "<group>"; };
+		68F389B09B5A951BE46E6AD82F964271 /* APName.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APName.m; path = Pod/Core/Public/Models/APName.m; sourceTree = "<group>"; };
+		69F334EF09837674A0DB1F660C876FDA /* icon-checkbox-selected-green-25x25.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-checkbox-selected-green-25x25.png"; path = "Pod/Assets/icon-checkbox-selected-green-25x25.png"; sourceTree = "<group>"; };
+		6A5EDC92D1AB5A12B3401EF1AD219BAC /* Pods-TravelJunkieTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkieTests-frameworks.sh"; sourceTree = "<group>"; };
+		6AB1594A777B5E4BA7948A2B3B979962 /* SwiftyDropbox.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyDropbox.xcconfig; sourceTree = "<group>"; };
+		6CFB50248A40B9FE2A874D12790B7C88 /* EVContactsPicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EVContactsPicker.framework; path = EVContactsPicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D5C3F37402C9CD3CDD7740A679B7658 /* Pods-TravelJunkieUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelJunkieUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D652872A49B7574674C450C7BA3C8D4 /* APDeprecated.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APDeprecated.h; path = Pod/Core/Private/Deprecated/APDeprecated.h; sourceTree = "<group>"; };
+		6E599CB65B22C55AEB3918304EFBB235 /* APImageExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APImageExtractor.h; path = Pod/Core/Private/Extractors/APImageExtractor.h; sourceTree = "<group>"; };
+		721033BD2DE2C8B72A5DA5628D8CC645 /* APAddressBook.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = APAddressBook.modulemap; sourceTree = "<group>"; };
+		739099E79997BB7778BE7120FAB78C10 /* Pods-TravelJunkie-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelJunkie-umbrella.h"; sourceTree = "<group>"; };
+		74233930F4E96F354C2A31EB771AFB48 /* APAddressBookAccessRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookAccessRoutine.h; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.h; sourceTree = "<group>"; };
+		74EAE53D9AA85AF497AC22AAE9030BB1 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/AddressBook.framework; sourceTree = DEVELOPER_DIR; };
+		755308748F9D683461958914CA014E64 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		79C3AD585340BEB15C963B44C0430A59 /* StoneSerializers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoneSerializers.swift; path = Source/SwiftyDropbox/PlatformNeutral/StoneSerializers.swift; sourceTree = "<group>"; };
+		7AC0E61744EB409EE506B2AF7BD7F7DA /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		7BFFF22DE89A4505149E58207C66DB0D /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Source/SwiftyDropbox/PlatformNeutral/Async.swift; sourceTree = "<group>"; };
+		7D9351C0E193919A84039AEA6C9CE87C /* APContact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContact.h; path = Pod/Core/Public/Models/APContact.h; sourceTree = "<group>"; };
+		7DB2C0CBD4ECC1BB20EFBED407CA8A72 /* APAddressBookBaseRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookBaseRoutine.m; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.m; sourceTree = "<group>"; };
+		7F053AC5F95065A303D8EC797B212CE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81FFFC426D779B46ECE274CCDBEC4FFF /* APPhone.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APPhone.m; path = Pod/Core/Public/Models/APPhone.m; sourceTree = "<group>"; };
+		83C05F449618D181022400E2B3E238AD /* Pods-TravelJunkieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkieUITests.release.xcconfig"; sourceTree = "<group>"; };
+		83CE8A19DEE80698D71D0DE813296D64 /* APAddressBookExternalChangeRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookExternalChangeRoutine.m; path = Pod/Core/Private/Routine/APAddressBookExternalChangeRoutine.m; sourceTree = "<group>"; };
+		8920E5C40475D87C7DF6E1A640E64214 /* Pods-TravelJunkieUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkieUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8A635F95EF011C593E590FBB73F1082C /* Pods-TravelJunkieUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelJunkieUITests.modulemap"; sourceTree = "<group>"; };
+		8C0EE0629DAFC586CBC5D114CAA50FCB /* Pods_TravelJunkie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelJunkie.framework; path = "Pods-TravelJunkie.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C99FFD84BB8BDA5A88EA8FEC2AE6D44 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		8D2687A40B53A9A1614E14B56227E6DF /* AuthRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthRoutes.swift; path = Source/SwiftyDropbox/PlatformNeutral/AuthRoutes.swift; sourceTree = "<group>"; };
+		8D4FE6C763264A8ED74488C7051C94E1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F68EBB507003660E93F12B09025C0FD /* APSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APSource.h; path = Pod/Core/Public/Models/APSource.h; sourceTree = "<group>"; };
+		901AB948105027D40D3368954F222EA4 /* Pods-TravelJunkieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TravelJunkieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		90931B73387D2951E8D1B71E8DEF82A4 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		910B4A18D925A940FBD320EA833C2653 /* Pods-TravelJunkieUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TravelJunkieUITests-umbrella.h"; sourceTree = "<group>"; };
+		922DECB24289BF195B125555E51AD1F8 /* APAddress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddress.m; path = Pod/Core/Public/Models/APAddress.m; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94334D305F36AE26E63FA0C1F2115E65 /* EVContactsPickerTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = EVContactsPickerTableViewCell.xib; path = Pod/Classes/EVContactsPickerTableViewCell.xib; sourceTree = "<group>"; };
+		9499FE3DBD4569B4291081E5611A27EF /* APAddress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddress.h; path = Pod/Core/Public/Models/APAddress.h; sourceTree = "<group>"; };
+		950EBFC50E01A7ACB9CBF71E4E2ACABD /* EVCContactsPickerDataSourceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVCContactsPickerDataSourceProtocol.swift; path = Pod/Classes/EVCContactsPickerDataSourceProtocol.swift; sourceTree = "<group>"; };
+		9510B54676B1F15B9501AC9D4B7F492D /* APContactDataExtractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APContactDataExtractor.h; path = Pod/Core/Private/Extractors/APContactDataExtractor.h; sourceTree = "<group>"; };
+		9570A3B87D4D62EC29CEBE9A2F2FD5E6 /* Team.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Team.swift; path = Source/SwiftyDropbox/PlatformNeutral/Team.swift; sourceTree = "<group>"; };
+		9DB7EAFB1D9A54FB3E7F322DA243985E /* SwiftyDropbox-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyDropbox-umbrella.h"; sourceTree = "<group>"; };
+		9F1BEFF88401E1F0483609394A161A7D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		A090AFBDA74C9343AD4B4C2EA7EDE593 /* Pods-TravelJunkieTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelJunkieTests-dummy.m"; sourceTree = "<group>"; };
+		A1B36847E2165D4AB14DD1AEB8F535AF /* Files.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Files.swift; path = Source/SwiftyDropbox/PlatformNeutral/Files.swift; sourceTree = "<group>"; };
+		A3B94C16CB2975927D699B9F7962F5BC /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		A43B04AC978F73D61BCD2A0FD36DB873 /* icon-avatar-60x60@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-avatar-60x60@2x.png"; path = "Pod/Assets/icon-avatar-60x60@2x.png"; sourceTree = "<group>"; };
+		A6058892F0C9D10CB6AC1D0D21A7CEBF /* APAddressBookContactsRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookContactsRoutine.h; path = Pod/Core/Private/Routine/APAddressBookContactsRoutine.h; sourceTree = "<group>"; };
+		A73D75337388CA8D44FD3329E275F85A /* APAddressBook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBook.h; path = Pod/Core/Public/APAddressBook.h; sourceTree = "<group>"; };
+		A7C49E879527F45DACC469B9234581A4 /* Pods-TravelJunkie.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelJunkie.modulemap"; sourceTree = "<group>"; };
+		AC4591A6A883D8A406E0E46CF23D206A /* EVPickedContactsViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVPickedContactsViewDelegate.swift; path = Pod/Classes/EVPickedContactsViewDelegate.swift; sourceTree = "<group>"; };
+		B2351AA256C9BBD61B39F15FC8A6956A /* APEmail.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APEmail.h; path = Pod/Core/Public/Models/APEmail.h; sourceTree = "<group>"; };
+		B39AFE1564671B668EA6FA27AA172CE3 /* OAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth.swift; path = Source/SwiftyDropbox/PlatformNeutral/OAuth.swift; sourceTree = "<group>"; };
+		B40444748CD2E211F951688801C687D5 /* DropboxClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropboxClient.swift; path = Source/SwiftyDropbox/PlatformNeutral/DropboxClient.swift; sourceTree = "<group>"; };
+		B4DBF45E086B0FBBA22A48E83CA68CC8 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		B59104C3279129790D3902F81A8D1B3D /* Pods-TravelJunkie-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TravelJunkie-dummy.m"; sourceTree = "<group>"; };
+		B8966C43D41A55F048443823F3863AF1 /* OAuthMobile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthMobile.swift; path = Source/SwiftyDropbox/SwiftyDropbox_iOS/iOS/OAuthMobile.swift; sourceTree = "<group>"; };
+		B9A15480FB3F25874CFBC8A854A1979A /* APRelatedPerson.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APRelatedPerson.m; path = Pod/Core/Public/Models/APRelatedPerson.m; sourceTree = "<group>"; };
+		BA323203173BD861F0E0509F77E70E66 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		BD28B5B25B59A4CEF742541132284930 /* EVContact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContact.swift; path = Pod/Classes/EVContact.swift; sourceTree = "<group>"; };
+		BF2EB5448D4C080623DF1A994371B0CE /* APContact.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APContact.m; path = Pod/Core/Public/Models/APContact.m; sourceTree = "<group>"; };
+		BF547127EB9D06EF9BFAD3D44B35C5AE /* TeamPolicies.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamPolicies.swift; path = Source/SwiftyDropbox/PlatformNeutral/TeamPolicies.swift; sourceTree = "<group>"; };
+		C22BB6D5122E3776E198BDB1CAA87718 /* Pods-TravelJunkieTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TravelJunkieTests.modulemap"; sourceTree = "<group>"; };
+		C2762365EBA16A06EC64313300DC229C /* Pods-TravelJunkieUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkieUITests-resources.sh"; sourceTree = "<group>"; };
+		C298CDE4C7ACD881A049E06E15417C11 /* SwiftyDropbox-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyDropbox-prefix.pch"; sourceTree = "<group>"; };
+		C648E768FC8E3F96CA2AB2161E0139EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C699C76E174C61CF7563414F4B758745 /* Pods_TravelJunkieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TravelJunkieTests.framework; path = "Pods-TravelJunkieTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C69CA2446EA84106E2DC0FA09CEDF89E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6A588C20D7275802CECCBBFE339F400 /* icon-checkbox-unselected-25x25.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "icon-checkbox-unselected-25x25.png"; path = "Pod/Assets/icon-checkbox-unselected-25x25.png"; sourceTree = "<group>"; };
+		C7D329757CD04AD2136FEC3200376BD8 /* APJob.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APJob.m; path = Pod/Core/Public/Models/APJob.m; sourceTree = "<group>"; };
+		CA03DEA5E2B901B47F800818B3396A61 /* EVContactBubble.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactBubble.swift; path = Pod/Classes/EVContactBubble.swift; sourceTree = "<group>"; };
+		CA4B147A610E70E686F525DB1F904034 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		CAE1479F11B7A028D94BB280485B8A1A /* APRecordDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRecordDate.h; path = Pod/Core/Public/Models/APRecordDate.h; sourceTree = "<group>"; };
+		CB89102D37B519438EE9381361E88B38 /* Pods-TravelJunkie-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelJunkie-acknowledgements.plist"; sourceTree = "<group>"; };
+		CB9ED3C0C667CFEB1E745F1969995E8C /* APAddressBookRefWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookRefWrapper.m; path = Pod/Core/Private/Wrapper/APAddressBookRefWrapper.m; sourceTree = "<group>"; };
+		D0E057818782D4A905E78FB6D75E90BB /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		D171C3F5F8FDA703A89DE854E12D3CFC /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		D3EE00ACADB193118F6C3740909E6AE8 /* Base.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Base.swift; path = Source/SwiftyDropbox/PlatformNeutral/Base.swift; sourceTree = "<group>"; };
+		D5A2B90CDAFEAF0010531B28ADA43BDC /* APEmail.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APEmail.m; path = Pod/Core/Public/Models/APEmail.m; sourceTree = "<group>"; };
+		D7AEA59769389B6CB9338E82D8B03CA2 /* EVContactsPicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EVContactsPicker-dummy.m"; sourceTree = "<group>"; };
+		D8B47C8A6E076157A0A74ACF83672278 /* APAddressBookBaseRoutine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookBaseRoutine.h; path = Pod/Core/Private/Routine/Base/APAddressBookBaseRoutine.h; sourceTree = "<group>"; };
+		D9B4F7C1B2DFC4EEDC3A0618A7DD9D9A /* SwiftyDropbox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftyDropbox.h; path = Source/SwiftyDropbox/PlatformNeutral/SwiftyDropbox.h; sourceTree = "<group>"; };
+		DA317A86DD62ACE880351EB2FB448376 /* EVContactsPickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EVContactsPickerDelegate.swift; path = Pod/Classes/EVContactsPickerDelegate.swift; sourceTree = "<group>"; };
+		DF31F5ED2BE10C499E41116A3A6EFE5E /* EVContactsPickerAssets.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = EVContactsPickerAssets.bundle; path = Pod/Assets/EVContactsPickerAssets.bundle; sourceTree = "<group>"; };
+		DF6CC08DFE4B5A23AB70F5E4F32B44B0 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		DFF23692F655ABABD9C66278198ED5EB /* Webkit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Webkit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Webkit.framework; sourceTree = DEVELOPER_DIR; };
+		E191050B37836B61C21B4F9A52CE6F19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E200E85CB717C927FC881B0E8ACE567C /* APAddressBookExternalChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APAddressBookExternalChangeDelegate.h; path = Pod/Core/Private/Routine/APAddressBookExternalChangeDelegate.h; sourceTree = "<group>"; };
+		E394F3DFEF6ADE3550B331557C343CFD /* APRelatedPerson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APRelatedPerson.h; path = Pod/Core/Public/Models/APRelatedPerson.h; sourceTree = "<group>"; };
+		E4BD67003FF143B7F293541A2E400B87 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E616CC7CCDB495934D34CA9B02240DB5 /* APAddressBookAccessRoutine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APAddressBookAccessRoutine.m; path = Pod/Core/Private/Routine/APAddressBookAccessRoutine.m; sourceTree = "<group>"; };
+		E802FAFEC33135CCE18D1671195108E8 /* APSocialServiceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = APSocialServiceHelper.m; path = Pod/Core/Private/Helpers/APSocialServiceHelper.m; sourceTree = "<group>"; };
+		E8EBAB1502D18E837087FF1305EF32C8 /* NSBundle+EVBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+EVBundle.swift"; path = "Pod/Classes/NSBundle+EVBundle.swift"; sourceTree = "<group>"; };
+		EAB1BE2C8EE451F4B25B235AA5EEC479 /* EVContactsPicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EVContactsPicker.modulemap; sourceTree = "<group>"; };
+		EACC480BDAC54BB4A701C71995CD9B4A /* APTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = APTypes.h; path = Pod/Core/Public/Models/APTypes.h; sourceTree = "<group>"; };
+		EE352C666E645A08197F18C927E19146 /* Pods-TravelJunkieTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TravelJunkieTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EEDBC057457760D4A7F6E4A4D2CD5E6A /* DropboxClientsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropboxClientsManager.swift; path = Source/SwiftyDropbox/PlatformNeutral/DropboxClientsManager.swift; sourceTree = "<group>"; };
+		EF5A0DFD0A33A245E9FE416CF693C9DD /* EVContactsPicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EVContactsPicker-prefix.pch"; sourceTree = "<group>"; };
+		EF6D3B1EB3820B259DE50F019570D86B /* TeamCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TeamCommon.swift; path = Source/SwiftyDropbox/PlatformNeutral/TeamCommon.swift; sourceTree = "<group>"; };
+		F7012C11D50BCFBDC4B583B3D3E0B315 /* Properties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Properties.swift; path = Source/SwiftyDropbox/PlatformNeutral/Properties.swift; sourceTree = "<group>"; };
+		FAAABD9F49E73A4F012314164BAB5959 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		FBDB16AB8FD48D83183F0C9899D7F9A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA44B17C49F38B0E05838138A1CA8E2 /* Pods-TravelJunkieTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TravelJunkieTests-resources.sh"; sourceTree = "<group>"; };
+		FEF0AEBE809A28507E6169AA62C26142 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		FF2E3965275ED17E8452F4B96F9DCD05 /* FilesRoutes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FilesRoutes.swift; path = Source/SwiftyDropbox/PlatformNeutral/FilesRoutes.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F7033BE6617C10C07BD7AB918A8188F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE1FEFCC93BE9716218F73064002CDC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		76B77684D03B2E337F34EF9AE0C79583 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FF6E8980C97DA66932E78E5F7CE56AF /* Alamofire.framework in Frameworks */,
+				8266CCE9A6323A35B10BFEACE20A49B7 /* Foundation.framework in Frameworks */,
+				F74ACA162095EA01E3758F7F8E589CE8 /* SystemConfiguration.framework in Frameworks */,
+				8F2237259705525A815406C62605A749 /* UIKit.framework in Frameworks */,
+				A107925322570E554E94DD533C74C006 /* Webkit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98C6221FE1CBE3BF2199A6659E53A91F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B290E22FA4C7E54452F4AE529680E08 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C992355CA2C449CBBAD0305DCBC7B762 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5633EC635210732C0118C21F7F0E4535 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC730479D5AB94EA498E91C444271F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				553521E6F76398B56A93BDAC608518F0 /* AddressBook.framework in Frameworks */,
+				CC24B2A0A948AF1869B63B2701412258 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2CA61D50236E3016F1DD464C131D69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA191FC9BAEF91CA3C71EE61310976F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DF3DD712E0B51AC2245E978BADABDD6 /* EVContactsPicker */ = {
+			isa = PBXGroup;
+			children = (
+				657E274CFF26568E2056C6A83C076176 /* EVBubbleColor.swift */,
+				950EBFC50E01A7ACB9CBF71E4E2ACABD /* EVCContactsPickerDataSourceProtocol.swift */,
+				BD28B5B25B59A4CEF742541132284930 /* EVContact.swift */,
+				CA03DEA5E2B901B47F800818B3396A61 /* EVContactBubble.swift */,
+				618BD086AC76BA3A97865B241100E4AD /* EVContactBubbleDelegate.swift */,
+				3A609A7446810EA3CE4B7F4A60512084 /* EVContactsPickerConstants.swift */,
+				DA317A86DD62ACE880351EB2FB448376 /* EVContactsPickerDelegate.swift */,
+				5C5535B8230ACEB71D8278F238D9D0B5 /* EVContactsPickerTableViewCell.swift */,
+				94334D305F36AE26E63FA0C1F2115E65 /* EVContactsPickerTableViewCell.xib */,
+				232B8483737B19EAE776A3D4CF5117CB /* EVContactsPickerViewController.swift */,
+				540BF9B8BA9E9EF13966D9C11D7B155F /* EVContactsPickerViewController.xib */,
+				0C5C6701257BE67FF93EDAEE8C263874 /* EVPickedContactsView.swift */,
+				AC4591A6A883D8A406E0E46CF23D206A /* EVPickedContactsViewDelegate.swift */,
+				E8EBAB1502D18E837087FF1305EF32C8 /* NSBundle+EVBundle.swift */,
+				F8D4C43AD78E38E8EEFFCBF8C07E27F2 /* Resources */,
+				AD3FEEF7EF99D556CF53350724FF04C9 /* Support Files */,
+			);
+			name = EVContactsPicker;
+			path = EVContactsPicker;
+			sourceTree = "<group>";
+		};
+		26C1DA9CFD45475AF3B8ED255ACD2598 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDB16AB8FD48D83183F0C9899D7F9A2 /* Info.plist */,
+				5547ABE195BD5D51CE737A01988E69C3 /* SwiftyDropbox.modulemap */,
+				6AB1594A777B5E4BA7948A2B3B979962 /* SwiftyDropbox.xcconfig */,
+				61E85D97EB648B4BA924A57612B5F9FE /* SwiftyDropbox-dummy.m */,
+				C298CDE4C7ACD881A049E06E15417C11 /* SwiftyDropbox-prefix.pch */,
+				9DB7EAFB1D9A54FB3E7F322DA243985E /* SwiftyDropbox-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyDropbox";
+			sourceTree = "<group>";
+		};
+		29ED57DE109FF66729D55A46D2D28AE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C99FFD84BB8BDA5A88EA8FEC2AE6D44 /* Alamofire.modulemap */,
+				D171C3F5F8FDA703A89DE854E12D3CFC /* Alamofire.xcconfig */,
+				4E8E0698E9888697927234D1F69CEC0C /* Alamofire-dummy.m */,
+				432762EA0B9507705FA8D36790B24748 /* Alamofire-prefix.pch */,
+				FAAABD9F49E73A4F012314164BAB5959 /* Alamofire-umbrella.h */,
+				42869FB3ED354C78772A60A5D85B8BB5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		3E8DF102E56DF10FF966B12E9B527182 /* APAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				DEB30FD2FBA577160A5485E5CCDBE3EE /* Core */,
+				67EAA6F2939321E7A713064831F82D3F /* Support Files */,
+			);
+			name = APAddressBook;
+			path = APAddressBook;
+			sourceTree = "<group>";
+		};
+		626BE02B583652D883A14A0561438CB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3CD0FA7EE743F01B3A6385702606A408 /* Alamofire.framework */,
+				691B82F8E802FBD985D9B47BBB968EFA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67EAA6F2939321E7A713064831F82D3F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				721033BD2DE2C8B72A5DA5628D8CC645 /* APAddressBook.modulemap */,
+				2941E8ADC88C8B933C9FB4037BA73987 /* APAddressBook.xcconfig */,
+				3461B1E95ECA1E125ACB3DC2B184E622 /* APAddressBook-dummy.m */,
+				4978A00B8FCFE1BA9B4252C9FC369BA0 /* APAddressBook-prefix.pch */,
+				318CB8771031CB5A0A8C6658AFA61867 /* APAddressBook-umbrella.h */,
+				C648E768FC8E3F96CA2AB2161E0139EA /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APAddressBook";
+			sourceTree = "<group>";
+		};
+		691B82F8E802FBD985D9B47BBB968EFA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				74EAE53D9AA85AF497AC22AAE9030BB1 /* AddressBook.framework */,
+				52AA2CE690906B6C1EDF20C52B5B85EA /* Foundation.framework */,
+				129385A3F29D1225408CD7BD00E33BA5 /* SystemConfiguration.framework */,
+				E191050B37836B61C21B4F9A52CE6F19 /* UIKit.framework */,
+				DFF23692F655ABABD9C66278198ED5EB /* Webkit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7A6610B6A060EC68850CD6BBF15208B3 /* Pods-TravelJunkieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C69CA2446EA84106E2DC0FA09CEDF89E /* Info.plist */,
+				8A635F95EF011C593E590FBB73F1082C /* Pods-TravelJunkieUITests.modulemap */,
+				08D53AAC6A044B6DD8C7873C5A93209A /* Pods-TravelJunkieUITests-acknowledgements.markdown */,
+				6D5C3F37402C9CD3CDD7740A679B7658 /* Pods-TravelJunkieUITests-acknowledgements.plist */,
+				14501079EF53C38CF46BDBCC58F87D9F /* Pods-TravelJunkieUITests-dummy.m */,
+				8920E5C40475D87C7DF6E1A640E64214 /* Pods-TravelJunkieUITests-frameworks.sh */,
+				C2762365EBA16A06EC64313300DC229C /* Pods-TravelJunkieUITests-resources.sh */,
+				910B4A18D925A940FBD320EA833C2653 /* Pods-TravelJunkieUITests-umbrella.h */,
+				901AB948105027D40D3368954F222EA4 /* Pods-TravelJunkieUITests.debug.xcconfig */,
+				83C05F449618D181022400E2B3E238AD /* Pods-TravelJunkieUITests.release.xcconfig */,
+			);
+			name = "Pods-TravelJunkieUITests";
+			path = "Target Support Files/Pods-TravelJunkieUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				626BE02B583652D883A14A0561438CB2 /* Frameworks */,
+				B1FE3C112EA726DEC8EDC2356ABB9FCA /* Pods */,
+				A64A0C6EEFAAFF5C5B887189FC9DC9D0 /* Products */,
+				CF76C326B6770BD35C7C5472C29464BF /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8654F2021D8A76464A431421D41335BD /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				CA4B147A610E70E686F525DB1F904034 /* AFError.swift */,
+				DF6CC08DFE4B5A23AB70F5E4F32B44B0 /* Alamofire.swift */,
+				BA323203173BD861F0E0509F77E70E66 /* DispatchQueue+Alamofire.swift */,
+				049A1B3D77A007BDF27F20148EBAE1F5 /* MultipartFormData.swift */,
+				B4DBF45E086B0FBBA22A48E83CA68CC8 /* NetworkReachabilityManager.swift */,
+				5BFC36797F70F9C4D08088CBE67B0FAA /* Notifications.swift */,
+				90931B73387D2951E8D1B71E8DEF82A4 /* ParameterEncoding.swift */,
+				2A7B39CF3973122A58EEC693AEE21528 /* Request.swift */,
+				9F1BEFF88401E1F0483609394A161A7D /* Response.swift */,
+				7AC0E61744EB409EE506B2AF7BD7F7DA /* ResponseSerialization.swift */,
+				755308748F9D683461958914CA014E64 /* Result.swift */,
+				FEF0AEBE809A28507E6169AA62C26142 /* ServerTrustPolicy.swift */,
+				4AB117888B60385ECC400C25ED8794C7 /* SessionDelegate.swift */,
+				01777BA50290DBF4D6EFD899AA00AB66 /* SessionManager.swift */,
+				D0E057818782D4A905E78FB6D75E90BB /* TaskDelegate.swift */,
+				A3B94C16CB2975927D699B9F7962F5BC /* Timeline.swift */,
+				414F8099EB16FA93F8D115DEFD8FAC87 /* Validation.swift */,
+				29ED57DE109FF66729D55A46D2D28AE1 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		A64A0C6EEFAAFF5C5B887189FC9DC9D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CF54E892D7EBBB0CAAC243A6AF9755 /* Alamofire.framework */,
+				4A5921FBE64C9BCE42CF293B15DE1B90 /* APAddressBook.framework */,
+				6CFB50248A40B9FE2A874D12790B7C88 /* EVContactsPicker.framework */,
+				8C0EE0629DAFC586CBC5D114CAA50FCB /* Pods_TravelJunkie.framework */,
+				C699C76E174C61CF7563414F4B758745 /* Pods_TravelJunkieTests.framework */,
+				1FA4B70EF60497A6D3C5374B6D0D534F /* Pods_TravelJunkieUITests.framework */,
+				4B2474607FF0702260BC1C375DDDBD6E /* SwiftyDropbox.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD3FEEF7EF99D556CF53350724FF04C9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1BE2C8EE451F4B25B235AA5EEC479 /* EVContactsPicker.modulemap */,
+				20D21EBC89A35D5EEFB357D637CD1EC8 /* EVContactsPicker.xcconfig */,
+				D7AEA59769389B6CB9338E82D8B03CA2 /* EVContactsPicker-dummy.m */,
+				EF5A0DFD0A33A245E9FE416CF693C9DD /* EVContactsPicker-prefix.pch */,
+				50481875A0698B0F5B04E5B19B698960 /* EVContactsPicker-umbrella.h */,
+				8D4FE6C763264A8ED74488C7051C94E1 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EVContactsPicker";
+			sourceTree = "<group>";
+		};
+		B1FE3C112EA726DEC8EDC2356ABB9FCA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8654F2021D8A76464A431421D41335BD /* Alamofire */,
+				3E8DF102E56DF10FF966B12E9B527182 /* APAddressBook */,
+				0DF3DD712E0B51AC2245E978BADABDD6 /* EVContactsPicker */,
+				E9736D10DF83E2AD10F539DC39431012 /* SwiftyDropbox */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFBEB6417395C9C37C9424570E8E0A9E /* Pods-TravelJunkie */ = {
+			isa = PBXGroup;
+			children = (
+				7F053AC5F95065A303D8EC797B212CE3 /* Info.plist */,
+				A7C49E879527F45DACC469B9234581A4 /* Pods-TravelJunkie.modulemap */,
+				3DAA77F33D77730D88F777CA6991D2D4 /* Pods-TravelJunkie-acknowledgements.markdown */,
+				CB89102D37B519438EE9381361E88B38 /* Pods-TravelJunkie-acknowledgements.plist */,
+				B59104C3279129790D3902F81A8D1B3D /* Pods-TravelJunkie-dummy.m */,
+				2C6F33FA42EA15C1F05E568D0F05179E /* Pods-TravelJunkie-frameworks.sh */,
+				19207E93689AE0FBD8725AC4854AB2CB /* Pods-TravelJunkie-resources.sh */,
+				739099E79997BB7778BE7120FAB78C10 /* Pods-TravelJunkie-umbrella.h */,
+				3B91A85A37F50C5D382C2C0AB77EEF1E /* Pods-TravelJunkie.debug.xcconfig */,
+				3B52726AC9574450F484A45EC370185D /* Pods-TravelJunkie.release.xcconfig */,
+			);
+			name = "Pods-TravelJunkie";
+			path = "Target Support Files/Pods-TravelJunkie";
+			sourceTree = "<group>";
+		};
+		CF76C326B6770BD35C7C5472C29464BF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFBEB6417395C9C37C9424570E8E0A9E /* Pods-TravelJunkie */,
+				E764E4684586166B75200F49BC860450 /* Pods-TravelJunkieTests */,
+				7A6610B6A060EC68850CD6BBF15208B3 /* Pods-TravelJunkieUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DEB30FD2FBA577160A5485E5CCDBE3EE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9499FE3DBD4569B4291081E5611A27EF /* APAddress.h */,
+				922DECB24289BF195B125555E51AD1F8 /* APAddress.m */,
+				A73D75337388CA8D44FD3329E275F85A /* APAddressBook.h */,
+				48CBABE49810D82BC942CE270981D2FE /* APAddressBook.m */,
+				74233930F4E96F354C2A31EB771AFB48 /* APAddressBookAccessRoutine.h */,
+				E616CC7CCDB495934D34CA9B02240DB5 /* APAddressBookAccessRoutine.m */,
+				D8B47C8A6E076157A0A74ACF83672278 /* APAddressBookBaseRoutine.h */,
+				7DB2C0CBD4ECC1BB20EFBED407CA8A72 /* APAddressBookBaseRoutine.m */,
+				A6058892F0C9D10CB6AC1D0D21A7CEBF /* APAddressBookContactsRoutine.h */,
+				527E28A7CC03931E1DE71AD6AA6E229B /* APAddressBookContactsRoutine.m */,
+				E200E85CB717C927FC881B0E8ACE567C /* APAddressBookExternalChangeDelegate.h */,
+				4DE4D48739796C3E5B5A47249764B5C9 /* APAddressBookExternalChangeRoutine.h */,
+				83CE8A19DEE80698D71D0DE813296D64 /* APAddressBookExternalChangeRoutine.m */,
+				0DC6E6268C2CBD7C701A55C67B347473 /* APAddressBookRefWrapper.h */,
+				CB9ED3C0C667CFEB1E745F1969995E8C /* APAddressBookRefWrapper.m */,
+				7D9351C0E193919A84039AEA6C9CE87C /* APContact.h */,
+				BF2EB5448D4C080623DF1A994371B0CE /* APContact.m */,
+				45DC147D8ED9308E4B69372B5072B803 /* APContactBuilder.h */,
+				5BDE2017BF1E48C936155D135061D451 /* APContactBuilder.m */,
+				9510B54676B1F15B9501AC9D4B7F492D /* APContactDataExtractor.h */,
+				52AD7AA4FFC8509A34A2E4A34826805D /* APContactDataExtractor.m */,
+				65AD7B69B44E7C22E99A52ECDC12434A /* APContactDate.h */,
+				2F14D4BFA85E210BFCC4EB80E7920FBA /* APContactDate.m */,
+				181C4E7725A20B7C41445E7A36063A75 /* APContactListBuilder.h */,
+				482B75B5B8507409B3FF8A12A924024A /* APContactListBuilder.m */,
+				6D652872A49B7574674C450C7BA3C8D4 /* APDeprecated.h */,
+				B2351AA256C9BBD61B39F15FC8A6956A /* APEmail.h */,
+				D5A2B90CDAFEAF0010531B28ADA43BDC /* APEmail.m */,
+				6E599CB65B22C55AEB3918304EFBB235 /* APImageExtractor.h */,
+				2D9B486D86BC101C810D4543DD25EED4 /* APImageExtractor.m */,
+				2639FEDDFBE9C8EC5704E59DCA1044F0 /* APJob.h */,
+				C7D329757CD04AD2136FEC3200376BD8 /* APJob.m */,
+				01851DC2FFBC974DD332F0F8D45C6F77 /* APName.h */,
+				68F389B09B5A951BE46E6AD82F964271 /* APName.m */,
+				3BA9C86ED08F9B5A4CD0032ED82BE3C6 /* APPhone.h */,
+				81FFFC426D779B46ECE274CCDBEC4FFF /* APPhone.m */,
+				CAE1479F11B7A028D94BB280485B8A1A /* APRecordDate.h */,
+				27E2353D6363638A029128EDC612C26F /* APRecordDate.m */,
+				E394F3DFEF6ADE3550B331557C343CFD /* APRelatedPerson.h */,
+				B9A15480FB3F25874CFBC8A854A1979A /* APRelatedPerson.m */,
+				0275714EC5760E1FF6C0739F13512981 /* APSocialProfile.h */,
+				1D59ADFA30956884734FC4C8DB4C473B /* APSocialProfile.m */,
+				683EEF563FC8069D0F91B2CA9BB72905 /* APSocialServiceHelper.h */,
+				E802FAFEC33135CCE18D1671195108E8 /* APSocialServiceHelper.m */,
+				8F68EBB507003660E93F12B09025C0FD /* APSource.h */,
+				5495EE402FB58DD7F45DE2DE2E6201C6 /* APSource.m */,
+				50C7CB7C04F24BE325A7DD0FB875B119 /* APThread.h */,
+				53CC86A9A6840E893A026A2020FA1E64 /* APThread.m */,
+				EACC480BDAC54BB4A701C71995CD9B4A /* APTypes.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		E764E4684586166B75200F49BC860450 /* Pods-TravelJunkieTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4BD67003FF143B7F293541A2E400B87 /* Info.plist */,
+				C22BB6D5122E3776E198BDB1CAA87718 /* Pods-TravelJunkieTests.modulemap */,
+				25BAE7F14AE438B981EAA2DC022F19A3 /* Pods-TravelJunkieTests-acknowledgements.markdown */,
+				EE352C666E645A08197F18C927E19146 /* Pods-TravelJunkieTests-acknowledgements.plist */,
+				A090AFBDA74C9343AD4B4C2EA7EDE593 /* Pods-TravelJunkieTests-dummy.m */,
+				6A5EDC92D1AB5A12B3401EF1AD219BAC /* Pods-TravelJunkieTests-frameworks.sh */,
+				FCA44B17C49F38B0E05838138A1CA8E2 /* Pods-TravelJunkieTests-resources.sh */,
+				5F04C404304F984689F27E7D2FC5A05A /* Pods-TravelJunkieTests-umbrella.h */,
+				5F85ECAF21A85B28852F83156E196D7A /* Pods-TravelJunkieTests.debug.xcconfig */,
+				0FF3DAFA25058C0DDB457B215735C687 /* Pods-TravelJunkieTests.release.xcconfig */,
+			);
+			name = "Pods-TravelJunkieTests";
+			path = "Target Support Files/Pods-TravelJunkieTests";
+			sourceTree = "<group>";
+		};
+		E9736D10DF83E2AD10F539DC39431012 /* SwiftyDropbox */ = {
+			isa = PBXGroup;
+			children = (
+				7BFFF22DE89A4505149E58207C66DB0D /* Async.swift */,
+				0A37DE03A52A7A93BA39C675D525BD97 /* Auth.swift */,
+				8D2687A40B53A9A1614E14B56227E6DF /* AuthRoutes.swift */,
+				D3EE00ACADB193118F6C3740909E6AE8 /* Base.swift */,
+				1B43C6F75817E108E33C45766E61714E /* BaseTeam.swift */,
+				21F0B52F0C9C7E554440E576DD16E57A /* Common.swift */,
+				B40444748CD2E211F951688801C687D5 /* DropboxClient.swift */,
+				EEDBC057457760D4A7F6E4A4D2CD5E6A /* DropboxClientsManager.swift */,
+				01BD9D902570BD5D488259408C12A8F7 /* DropboxTeamClient.swift */,
+				0D997959299A727934454C644EA5CC19 /* DropboxTransportClient.swift */,
+				A1B36847E2165D4AB14DD1AEB8F535AF /* Files.swift */,
+				FF2E3965275ED17E8452F4B96F9DCD05 /* FilesRoutes.swift */,
+				B39AFE1564671B668EA6FA27AA172CE3 /* OAuth.swift */,
+				B8966C43D41A55F048443823F3863AF1 /* OAuthMobile.swift */,
+				F7012C11D50BCFBDC4B583B3D3E0B315 /* Properties.swift */,
+				2A4BD97A2ED2004B852CBA2132823567 /* Sharing.swift */,
+				6579CD23496BB872F552965EFD895889 /* SharingRoutes.swift */,
+				43A43BB066744CA2B32FB873ACC00EDF /* StoneBase.swift */,
+				79C3AD585340BEB15C963B44C0430A59 /* StoneSerializers.swift */,
+				0001FEF238DDB1CB72262147B5552D15 /* StoneValidators.swift */,
+				D9B4F7C1B2DFC4EEDC3A0618A7DD9D9A /* SwiftyDropbox.h */,
+				9570A3B87D4D62EC29CEBE9A2F2FD5E6 /* Team.swift */,
+				EF6D3B1EB3820B259DE50F019570D86B /* TeamCommon.swift */,
+				BF547127EB9D06EF9BFAD3D44B35C5AE /* TeamPolicies.swift */,
+				252297785405D6EBF5FADD3CE5CFD76A /* TeamRoutes.swift */,
+				45F52A7B0F8EAF4EEBAB80B4C4D2BA5F /* Users.swift */,
+				39A1955C390ECF2E042C5BA6776438CC /* UsersRoutes.swift */,
+				26C1DA9CFD45475AF3B8ED255ACD2598 /* Support Files */,
+			);
+			name = SwiftyDropbox;
+			path = SwiftyDropbox;
+			sourceTree = "<group>";
+		};
+		F8D4C43AD78E38E8EEFFCBF8C07E27F2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF31F5ED2BE10C499E41116A3A6EFE5E /* EVContactsPickerAssets.bundle */,
+				500E0BB9A144A99B05E4C09430A89329 /* icon-avatar-60x60.png */,
+				A43B04AC978F73D61BCD2A0FD36DB873 /* icon-avatar-60x60@2x.png */,
+				69F334EF09837674A0DB1F660C876FDA /* icon-checkbox-selected-green-25x25.png */,
+				3D8EB5325F6F0BA60A506B8AD86578E9 /* icon-checkbox-selected-green-25x25@2x.png */,
+				C6A588C20D7275802CECCBBFE339F400 /* icon-checkbox-unselected-25x25.png */,
+				1C56F1827A4D596D40B3F16B3B5EFFFE /* icon-checkbox-unselected-25x25@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		06E99FA285B7BDD9E10D972514CF4428 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F95C557AFEA61BADBA4BA39DAFA573FF /* SwiftyDropbox-umbrella.h in Headers */,
+				1F1D014A650E24BC27025F9622A086C8 /* SwiftyDropbox.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		514CE9E511EC54F79B2AB452E0904768 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84482C2D1274B555DE5ADF2FFE5F0E90 /* Pods-TravelJunkie-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69C149F8CEC9FDEEE029936AF55C0F9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE18CCA0BD67934E70CF6F8ACFFB01B9 /* APAddress.h in Headers */,
+				C12AA952AFA82B18BB24536B9FD35699 /* APAddressBook-umbrella.h in Headers */,
+				5A17224617474E50AF6048EF3CACB390 /* APAddressBook.h in Headers */,
+				15F08193174D25A990D2A74B7CC3BF81 /* APAddressBookAccessRoutine.h in Headers */,
+				4F11747B289E20D4E39F96C8FDCC038C /* APAddressBookBaseRoutine.h in Headers */,
+				8D6AA1AC2CB4A9476910AA2BA344E445 /* APAddressBookContactsRoutine.h in Headers */,
+				D4F63980AF81B4392E065B8A852E9BF9 /* APAddressBookExternalChangeDelegate.h in Headers */,
+				5888C2A15A25CA4BB5D482D3898E5D6C /* APAddressBookExternalChangeRoutine.h in Headers */,
+				AFB9B9BA3A7D9349967DDD27B1AB5955 /* APAddressBookRefWrapper.h in Headers */,
+				9F92A19CB2F84E01364786D785293C18 /* APContact.h in Headers */,
+				250DA5D8C8F630AA0B97B3B6314F48EC /* APContactBuilder.h in Headers */,
+				4B6BC4DFC78D087218A41B4D659549EC /* APContactDataExtractor.h in Headers */,
+				DDFB9DFC4DF9C00B344436C5549ADE4D /* APContactDate.h in Headers */,
+				BEDC24FE35DAFC844418C626E9118C21 /* APContactListBuilder.h in Headers */,
+				0C4F680C0D707222DC53067283D51F54 /* APDeprecated.h in Headers */,
+				5376779CEE9C8F9497ABF7D51FE56CA4 /* APEmail.h in Headers */,
+				AB5B7AFFECB8E63F2F4789836285C5A5 /* APImageExtractor.h in Headers */,
+				52FA3205E08F65BE07E9FB7B3D986F13 /* APJob.h in Headers */,
+				EAC8013792FE278240CFB5B3F830A98E /* APName.h in Headers */,
+				D3417FFE0DE976724A51A4A7F2B990CC /* APPhone.h in Headers */,
+				2E9A9FA859970A80E8177A81B45C5FA9 /* APRecordDate.h in Headers */,
+				3EEE51D5B509C734BBAD8D622E0BBE65 /* APRelatedPerson.h in Headers */,
+				9AA23906978E0AD36164F55788789307 /* APSocialProfile.h in Headers */,
+				3ABBC0F8C3712C28956971F2CEC92B14 /* APSocialServiceHelper.h in Headers */,
+				6E74DC74D6FEC1E1C077D16EE726E663 /* APSource.h in Headers */,
+				26799E0AEDE0ACD98F9D672EB5673879 /* APThread.h in Headers */,
+				DBC1404A333D8319163BF228F98B0DF5 /* APTypes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18674F306479294100CB0F5B459553A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F123A8AED8658F59236F8F4F3D156DA6 /* Pods-TravelJunkieTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C87ED59DCAA9FF26BA040630A628A7B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E705DA5296783D64509B056295AF6B /* EVContactsPicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA69D891BF08C54D4F1D55DD7F7EF6B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4FA2ECD0DC3179E93B37243B740DFC6 /* Pods-TravelJunkieUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E0BEE6BAB87A66D72D22DBF0C0895A7 /* EVContactsPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B825E761343A96669634667BE0604DF /* Build configuration list for PBXNativeTarget "EVContactsPicker" */;
+			buildPhases = (
+				FD775C0AAD6E237A6F089B92ADDB57AD /* Sources */,
+				98C6221FE1CBE3BF2199A6659E53A91F /* Frameworks */,
+				11C6F284AFC787954AE71DC1BF6DCC35 /* Resources */,
+				C87ED59DCAA9FF26BA040630A628A7B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EVContactsPicker;
+			productName = EVContactsPicker;
+			productReference = 6CFB50248A40B9FE2A874D12790B7C88 /* EVContactsPicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		30350482F129A6229F64D29A447F8BF7 /* Pods-TravelJunkieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C21E90DFE48885EFEE205E97411AB236 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkieUITests" */;
+			buildPhases = (
+				7BADC43A40F24CBFAB39ECA5124AC540 /* Sources */,
+				2F7033BE6617C10C07BD7AB918A8188F /* Frameworks */,
+				CA69D891BF08C54D4F1D55DD7F7EF6B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TravelJunkieUITests";
+			productName = "Pods-TravelJunkieUITests";
+			productReference = 1FA4B70EF60497A6D3C5374B6D0D534F /* Pods_TravelJunkieUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B598A2569FA8E8571A16685B46DE3F4 /* Pods-TravelJunkie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD812AA48CDAF8EB400A6FE50C0AF972 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkie" */;
+			buildPhases = (
+				5F7B2F71916F1DB5759A4C2491CCFF0A /* Sources */,
+				E2CA61D50236E3016F1DD464C131D69E /* Frameworks */,
+				514CE9E511EC54F79B2AB452E0904768 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				905A1BBD1DE0C7C176C1F7130D28462F /* PBXTargetDependency */,
+				C1F55CE4C7C89CA864ACD44F667AAD28 /* PBXTargetDependency */,
+				5767A0A43BD381819EB11FCB66DA895C /* PBXTargetDependency */,
+				50C985774AFBFB2F2DF2C843433ACDC4 /* PBXTargetDependency */,
+			);
+			name = "Pods-TravelJunkie";
+			productName = "Pods-TravelJunkie";
+			productReference = 8C0EE0629DAFC586CBC5D114CAA50FCB /* Pods_TravelJunkie.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 18CF54E892D7EBBB0CAAC243A6AF9755 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A0025ED4E9F29792F1D06ADAA3B5530 /* Build configuration list for PBXNativeTarget "APAddressBook" */;
+			buildPhases = (
+				75170E679475EB7D98D39DAF2A6E1F96 /* Sources */,
+				CEC730479D5AB94EA498E91C444271F0 /* Frameworks */,
+				69C149F8CEC9FDEEE029936AF55C0F9B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APAddressBook;
+			productName = APAddressBook;
+			productReference = 4A5921FBE64C9BCE42CF293B15DE1B90 /* APAddressBook.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		95F6B6675F33D6CD1EB0AE9BC979D23A /* SwiftyDropbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A3BBAE6E03755A64D154D9809E240A0 /* Build configuration list for PBXNativeTarget "SwiftyDropbox" */;
+			buildPhases = (
+				E3242A4B77B3B0F11A6A40B9A3655AD3 /* Sources */,
+				76B77684D03B2E337F34EF9AE0C79583 /* Frameworks */,
+				06E99FA285B7BDD9E10D972514CF4428 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90D21BEFC46D4A9D252CE8D23F85281E /* PBXTargetDependency */,
+			);
+			name = SwiftyDropbox;
+			productName = SwiftyDropbox;
+			productReference = 4B2474607FF0702260BC1C375DDDBD6E /* SwiftyDropbox.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E81A30DA2DDFD1050DEDD38261BAFAE4 /* Pods-TravelJunkieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E889A299D2D7BE3F29EB118AE80A6C7 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkieTests" */;
+			buildPhases = (
+				C76761C52A8083D9761CFA60EB638B11 /* Sources */,
+				C992355CA2C449CBBAD0305DCBC7B762 /* Frameworks */,
+				C18674F306479294100CB0F5B459553A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TravelJunkieTests";
+			productName = "Pods-TravelJunkieTests";
+			productReference = C699C76E174C61CF7563414F4B758745 /* Pods_TravelJunkieTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A64A0C6EEFAAFF5C5B887189FC9DC9D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */,
+				1E0BEE6BAB87A66D72D22DBF0C0895A7 /* EVContactsPicker */,
+				6B598A2569FA8E8571A16685B46DE3F4 /* Pods-TravelJunkie */,
+				E81A30DA2DDFD1050DEDD38261BAFAE4 /* Pods-TravelJunkieTests */,
+				30350482F129A6229F64D29A447F8BF7 /* Pods-TravelJunkieUITests */,
+				95F6B6675F33D6CD1EB0AE9BC979D23A /* SwiftyDropbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11C6F284AFC787954AE71DC1BF6DCC35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C749A4EE44A9EEF094BB2A81422DCD2 /* EVContactsPickerAssets.bundle in Resources */,
+				A30192366A89905406E98A0AC3BF73A0 /* icon-avatar-60x60.png in Resources */,
+				BD6F109EB24CB270B950039E30756E39 /* icon-avatar-60x60@2x.png in Resources */,
+				68387166AB8FE562620F2AE54FBF2259 /* icon-checkbox-selected-green-25x25.png in Resources */,
+				21D75140B2E9076F4C1F2A9D13F9654C /* icon-checkbox-selected-green-25x25@2x.png in Resources */,
+				DE1E4CDDC301DBF2D1E05EDE04F12BFF /* icon-checkbox-unselected-25x25.png in Resources */,
+				485DFE0A041A7F4D930AA26B53FE52D6 /* icon-checkbox-unselected-25x25@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F7B2F71916F1DB5759A4C2491CCFF0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70386ACED001C3EFF1008BB725A099AF /* Pods-TravelJunkie-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75170E679475EB7D98D39DAF2A6E1F96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B045B961C5FBA8FA97077B6B7EE0EA38 /* APAddress.m in Sources */,
+				82FC6BA642B784AF15504B3CAD6112F5 /* APAddressBook-dummy.m in Sources */,
+				2F8C8A822847C133DA0280CF394793DB /* APAddressBook.m in Sources */,
+				E9B5E5A3F04F5E5E7CE8C49B14F35B25 /* APAddressBookAccessRoutine.m in Sources */,
+				BE9FBE763372EEFDD89F9509A35ACEEB /* APAddressBookBaseRoutine.m in Sources */,
+				951DCCDD198B15FF20E2C323ABDB8B96 /* APAddressBookContactsRoutine.m in Sources */,
+				CB1F9B017823F1C82A0F2E67CA2E5812 /* APAddressBookExternalChangeRoutine.m in Sources */,
+				8CEE105C4D14A5818E1CBA13F179B582 /* APAddressBookRefWrapper.m in Sources */,
+				843513ADC01D2246AB47D538614D8199 /* APContact.m in Sources */,
+				13F732D7DD972C3FC13F5BDD7459EF08 /* APContactBuilder.m in Sources */,
+				131CB20D22C89D0125998C93FAEBE384 /* APContactDataExtractor.m in Sources */,
+				E74A0467366691FE992AA38111D88BFF /* APContactDate.m in Sources */,
+				7F5C7917FD687381D26D14163C286A6C /* APContactListBuilder.m in Sources */,
+				49CC8F53718897860AF1CA8293D55D20 /* APEmail.m in Sources */,
+				5CF3EF0272C516AA745DD8FB10BB0CF0 /* APImageExtractor.m in Sources */,
+				B07EA60E9B6A892F6DDF7C21F2B940C9 /* APJob.m in Sources */,
+				C14D34925F8C861FB6C974FF920C12EA /* APName.m in Sources */,
+				51F15C0B449B9B37FE4907A46F11ADBD /* APPhone.m in Sources */,
+				63AD029580603073B402DA372A866157 /* APRecordDate.m in Sources */,
+				DC904E384C8AE46067B04EAB2F4465F7 /* APRelatedPerson.m in Sources */,
+				A3B68C6BCBC03EA93F24E9ECFCF2E30D /* APSocialProfile.m in Sources */,
+				6499728A58462027C7DF322197CF98AE /* APSocialServiceHelper.m in Sources */,
+				79C79977FBEE7539DF0BD11A7EE1DABF /* APSource.m in Sources */,
+				7D7E7564A04F7B2AC1956B43B190105B /* APThread.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BADC43A40F24CBFAB39ECA5124AC540 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D01695FFD144C93937FB7F2344154A7 /* Pods-TravelJunkieUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C76761C52A8083D9761CFA60EB638B11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F761D5A194151441AD55702396B1CD2 /* Pods-TravelJunkieTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3242A4B77B3B0F11A6A40B9A3655AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0904FE6078E20D519F13A83277EB3D8E /* Async.swift in Sources */,
+				3351ADB9970851368427EB89BF55CC95 /* Auth.swift in Sources */,
+				C38B90F4239E68ACCDF6E5A12B759794 /* AuthRoutes.swift in Sources */,
+				569D4C517AA199C20B92B4770F3DD878 /* Base.swift in Sources */,
+				7937B09F6DF6534D9A0FE3649FD0DBC7 /* BaseTeam.swift in Sources */,
+				A6F3B18E1FFB20277B697FA9C2C6E226 /* Common.swift in Sources */,
+				AD89B479441D2A63C4438B6DC302F093 /* DropboxClient.swift in Sources */,
+				6159CCA45A0FA42E4F72B8900932D6F3 /* DropboxClientsManager.swift in Sources */,
+				97F9CA28BBDCE47B01CA3C4BF093DDC4 /* DropboxTeamClient.swift in Sources */,
+				98831FEAB67B7ED6153AFB4B8C9C8C1C /* DropboxTransportClient.swift in Sources */,
+				05EC4BE2EC34480A0E017B2A9B31BEE6 /* Files.swift in Sources */,
+				5EA7606B801AE28270761AF7033C8BB5 /* FilesRoutes.swift in Sources */,
+				69A1B2C379D742B12180671C5A64E2AE /* OAuth.swift in Sources */,
+				0C40D48CD8BC0125473982FE1F4FFC25 /* OAuthMobile.swift in Sources */,
+				3DE7829D6FE1184471EF95B921840B6A /* Properties.swift in Sources */,
+				947814CD8D4928B0BA67F85B2910A63F /* Sharing.swift in Sources */,
+				9AE2468675A507D8247E012DF08AA77E /* SharingRoutes.swift in Sources */,
+				F30CA7DCC8B69DB9458381CFB6B1454B /* StoneBase.swift in Sources */,
+				EB6BDBE79E4C98C942AAF23922919A7D /* StoneSerializers.swift in Sources */,
+				A11016AE41A6D1B487F3CCB758CB666A /* StoneValidators.swift in Sources */,
+				9A0798F0C30A434ABECCB3ADCC4C739E /* SwiftyDropbox-dummy.m in Sources */,
+				C8638BA44D0827C7BC4244F2AC7C90F7 /* Team.swift in Sources */,
+				3283411313E87CD102B08EECE6FB46E1 /* TeamCommon.swift in Sources */,
+				3D2CCD0A48226F3E5BF7F5CCBE852C2E /* TeamPolicies.swift in Sources */,
+				F5CBD4E4ACE46C7F0AC7619133B1AF37 /* TeamRoutes.swift in Sources */,
+				14912B2C0638035BA90F66B23B3EEA3A /* Users.swift in Sources */,
+				FD6830A19BAEE67C2A2AD2FCB7AE8A2A /* UsersRoutes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD775C0AAD6E237A6F089B92ADDB57AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15A85FA9F95F284C45587CBD96883231 /* EVBubbleColor.swift in Sources */,
+				C793AF19D42DB63B17EA7AF1772C52B0 /* EVCContactsPickerDataSourceProtocol.swift in Sources */,
+				25BDC493215B6922911A0322923EC435 /* EVContact.swift in Sources */,
+				E8FE1787E39C7705A20846D768F640F9 /* EVContactBubble.swift in Sources */,
+				769C2ED7F65883D18F9466C63DE61872 /* EVContactBubbleDelegate.swift in Sources */,
+				BA4E23B72AE5235FC7880600A53C6336 /* EVContactsPicker-dummy.m in Sources */,
+				91B7271F7584A736045353DD597E0E0B /* EVContactsPickerConstants.swift in Sources */,
+				E54AD576F666C71D3FACFDDC16148CF6 /* EVContactsPickerDelegate.swift in Sources */,
+				6BCF522E67A01A08DC839FFDE4CA90B8 /* EVContactsPickerTableViewCell.swift in Sources */,
+				838BCE135CC759D7B45E67394519179D /* EVContactsPickerTableViewCell.xib in Sources */,
+				EB5BDBE86D295B6ECC47F11650404FF2 /* EVContactsPickerViewController.swift in Sources */,
+				3475CACB71D521A6771494B457F618FE /* EVContactsPickerViewController.xib in Sources */,
+				17F2942B5C7428586BFD9EC8FECCD0E2 /* EVPickedContactsView.swift in Sources */,
+				FB01C40A29F0AD3FA4FA614D4983A6D3 /* EVPickedContactsViewDelegate.swift in Sources */,
+				FB23B96C0153EE9E63C70BDDB7C221AA /* NSBundle+EVBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C985774AFBFB2F2DF2C843433ACDC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyDropbox;
+			target = 95F6B6675F33D6CD1EB0AE9BC979D23A /* SwiftyDropbox */;
+			targetProxy = CA1F1C0EC20CB921890BD5217CDE68CA /* PBXContainerItemProxy */;
+		};
+		5767A0A43BD381819EB11FCB66DA895C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EVContactsPicker;
+			target = 1E0BEE6BAB87A66D72D22DBF0C0895A7 /* EVContactsPicker */;
+			targetProxy = 83C0DAB2E538328D2855ED10B59D172A /* PBXContainerItemProxy */;
+		};
+		905A1BBD1DE0C7C176C1F7130D28462F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APAddressBook;
+			target = 8B20CAEEA320DAD747BB08D1128BDD90 /* APAddressBook */;
+			targetProxy = BA66CBCBEB4F012DBA962F3EADBA53A5 /* PBXContainerItemProxy */;
+		};
+		90D21BEFC46D4A9D252CE8D23F85281E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 6FACD4DFC9E66B3CB516AD201BA51195 /* PBXContainerItemProxy */;
+		};
+		C1F55CE4C7C89CA864ACD44F667AAD28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 90ACDF7BD472FE3F9B91B1FD2DAA424E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		010C4EE1A59A1F5BABD9959C51AA1F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B52726AC9574450F484A45EC370185D /* Pods-TravelJunkie.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B04BE2E329CCFC1BE7002FF13860669 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2941E8ADC88C8B933C9FB4037BA73987 /* APAddressBook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/APAddressBook/APAddressBook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APAddressBook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/APAddressBook/APAddressBook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = APAddressBook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		14E8086C8C771AB1A476076ECFEA5F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F85ECAF21A85B28852F83156E196D7A /* Pods-TravelJunkieTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkieTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkieTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23AEE71121E6D7C9D30BD78F02A63DF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2941E8ADC88C8B933C9FB4037BA73987 /* APAddressBook.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/APAddressBook/APAddressBook-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/APAddressBook/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/APAddressBook/APAddressBook.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = APAddressBook;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57F44DDCFC241EADC00C3AC1B99974BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B91A85A37F50C5D382C2C0AB77EEF1E /* Pods-TravelJunkie.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkie/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkie/Pods-TravelJunkie.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkie;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5EA8C5E30AA2C6907446C5AAD9F86EA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB1594A777B5E4BA7948A2B3B979962 /* SwiftyDropbox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyDropbox/SwiftyDropbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyDropbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyDropbox/SwiftyDropbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyDropbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		621A10F5C0A994B466277661C1B2C19F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D171C3F5F8FDA703A89DE854E12D3CFC /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		854C7A41ADAEF76DBA62EFBD049C372A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C05F449618D181022400E2B3E238AD /* Pods-TravelJunkieUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkieUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkieUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C48CCCB862EC56A4174F6E1715688C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D171C3F5F8FDA703A89DE854E12D3CFC /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9207C86ABA0D630A17828B16EF092BD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D21EBC89A35D5EEFB357D637CD1EC8 /* EVContactsPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EVContactsPicker/EVContactsPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EVContactsPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EVContactsPicker/EVContactsPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = EVContactsPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E143379C5EE7A5BD9B5D553D212899FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 901AB948105027D40D3368954F222EA4 /* Pods-TravelJunkieUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkieUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkieUITests/Pods-TravelJunkieUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkieUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E71CB4DEEC6A96820CB5CF9CFC908D56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AB1594A777B5E4BA7948A2B3B979962 /* SwiftyDropbox.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyDropbox/SwiftyDropbox-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyDropbox/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyDropbox/SwiftyDropbox.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyDropbox;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F873BC721DEC626FA9B467E9E96CDFB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FF3DAFA25058C0DDB457B215735C687 /* Pods-TravelJunkieTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TravelJunkieTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TravelJunkieTests/Pods-TravelJunkieTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TravelJunkieTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F895F22CEAE822F45971F70DC72B153D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20D21EBC89A35D5EEFB357D637CD1EC8 /* EVContactsPicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EVContactsPicker/EVContactsPicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EVContactsPicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EVContactsPicker/EVContactsPicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EVContactsPicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A3BBAE6E03755A64D154D9809E240A0 /* Build configuration list for PBXNativeTarget "SwiftyDropbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA8C5E30AA2C6907446C5AAD9F86EA7 /* Debug */,
+				E71CB4DEEC6A96820CB5CF9CFC908D56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A0025ED4E9F29792F1D06ADAA3B5530 /* Build configuration list for PBXNativeTarget "APAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				23AEE71121E6D7C9D30BD78F02A63DF0 /* Debug */,
+				0B04BE2E329CCFC1BE7002FF13860669 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B825E761343A96669634667BE0604DF /* Build configuration list for PBXNativeTarget "EVContactsPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9207C86ABA0D630A17828B16EF092BD4 /* Debug */,
+				F895F22CEAE822F45971F70DC72B153D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C48CCCB862EC56A4174F6E1715688C9 /* Debug */,
+				621A10F5C0A994B466277661C1B2C19F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E889A299D2D7BE3F29EB118AE80A6C7 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E8086C8C771AB1A476076ECFEA5F9A /* Debug */,
+				F873BC721DEC626FA9B467E9E96CDFB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C21E90DFE48885EFEE205E97411AB236 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E143379C5EE7A5BD9B5D553D212899FF /* Debug */,
+				854C7A41ADAEF76DBA62EFBD049C372A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD812AA48CDAF8EB400A6FE50C0AF972 /* Build configuration list for PBXNativeTarget "Pods-TravelJunkie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57F44DDCFC241EADC00C3AC1B99974BC /* Debug */,
+				010C4EE1A59A1F5BABD9959C51AA1F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
