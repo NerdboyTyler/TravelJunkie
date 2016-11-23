@@ -16,11 +16,15 @@ class NewViewController: UIViewController, UITextFieldDelegate {
         let dateForm = DateFormatter()
         dateForm.dateFormat = "yyyy-MM-dd"
         startDate = dateForm.string(from: datePicker.date)
+        startLabel.text = startDate
     }
+    @IBOutlet weak var endLabel: UILabel!
+    @IBOutlet weak var startLabel: UILabel!
     @IBAction func setEnd(_ sender: Any) {
         let dateForm = DateFormatter()
         dateForm.dateFormat = "yyyy-MM-dd"
         endDate = dateForm.string(from: datePicker.date)
+        endLabel.text = endDate
     }
     @IBOutlet weak var starSlider: UISlider!
     @IBAction func save(_ sender: Any) {

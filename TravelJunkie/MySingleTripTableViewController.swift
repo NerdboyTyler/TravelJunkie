@@ -30,9 +30,9 @@ class MySingleTripTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         //pickUpCars.append(Car(roadName: "DRGW", carNumber: 18347, location: "Marble City"))
-        lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: 1))
-        foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: 2))
-        sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: 3))
+        //lodgeArray.append(Location(name: "TestLodge", price: 12.00, rating: 3, parentTripID: 49, locType: 1))
+        //foodArray.append(Location(name: "TestFood", price: 12.00, rating: 3, parentTripID: 49, locType: 2))
+        //sightArray.append(Location(name: "TestSight", price: 12.00, rating: 3, parentTripID: 49, locType: 3))
     }
     
     func getLocationData(locationName: String, user: String){
@@ -54,7 +54,7 @@ class MySingleTripTableViewController: UITableViewController {
                 {
                     print("JSON data returned:\(json)")
                     self.locationData = json
-                    self.tableView.reloadData()
+                    self.parseData()
                 }
             }
             catch{
@@ -62,6 +62,27 @@ class MySingleTripTableViewController: UITableViewController {
             }
         }
         task.resume()
+    }
+    
+    func parseData()
+    {
+        for d in locationData
+        {
+            let loc = d.value(forKey: "locType") as! String
+            if loc == "1"
+            {
+                lodgeArray.append(Location(name: d.value(forKey: "name") as! String, price: Double(d.value(forKey: "price") as! String)!, rating: Int(d.value(forKey: "rating") as! String)!, parentTripID: 1, locType: 1))
+            }
+            else if loc == "2"
+            {
+                foodArray.append(Location(name: d.value(forKey: "name") as! String, price: Double(d.value(forKey: "price") as! String)!, rating: Int(d.value(forKey: "rating") as! String)!, parentTripID: 1, locType: 2))
+            }
+            else if loc == "3"
+            {
+                sightArray.append(Location(name: d.value(forKey: "name") as! String, price: Double(d.value(forKey: "price") as! String)!, rating: Int(d.value(forKey: "rating") as! String)!, parentTripID: 1, locType: 3))
+            }
+        }
+        self.tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -102,22 +123,124 @@ class MySingleTripTableViewController: UITableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTableViewCell
         // Configure the cell...
+        /*
+         cell.nameLabel.text = data[indexPath.row].value(forKey: "emailID") as? String
+         cell.tripTitleLabel.text = data[indexPath.row].value(forKey: "tripName") as? String
+         cell.dateLabel.text = (data[indexPath.row].value(forKey: "startDate") as! String) + " - " + (data[indexPath.row].value(forKey: "endDate") as! String)
+         
+         let rating = data[indexPath.row].value(forKey: "tripRating") as! String
+         switch(rating)
+         {
+         case "1":
+         cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
+         break
+         case "2":
+         cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
+         break
+         case "3":
+         cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
+         break
+         case "4":
+         cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
+         break
+         case "5":
+         cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+         break
+         default:
+         cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+         break
+         }
+
+         */
         
         if(indexPath[0] == 0)
         {
-            
-            //cell.locationName.text = locationData[indexPath.row].value(forKey: "name") as? String
-            cell.textLabel?.text = lodgeArray[indexPath.row].name
+            cell.nameLabel.text = self.lodgeArray[indexPath[1]].name
+            cell.tripTitleLabel.text = "\(self.lodgeArray[indexPath[1]].price)"
+            cell.dateLabel.text = ""
+            let rating = self.lodgeArray[indexPath[1]].rating
+            switch(rating)
+            {
+            case 1:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
+                break
+            case 2:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
+                break
+            case 3:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
+                break
+            case 4:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
+                break
+            case 5:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+            default:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+
+            }
         }
         else if(indexPath[0] == 1)
         {
-            cell.textLabel?.text = foodArray[indexPath.row].name
+            cell.nameLabel.text = self.foodArray[indexPath[1]].name
+            cell.tripTitleLabel.text = "\(self.foodArray[indexPath[1]].price)"
+            cell.dateLabel.text = ""
+            let rating = self.foodArray[indexPath[1]].rating
+            switch(rating)
+            {
+            case 1:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
+                break
+            case 2:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
+                break
+            case 3:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
+                break
+            case 4:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
+                break
+            case 5:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+            default:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+                
+            }
         }
         else if(indexPath[0] == 2)
         {
-            cell.textLabel?.text = sightArray[indexPath.row].name
+            cell.nameLabel.text = self.sightArray[indexPath[1]].name
+            cell.tripTitleLabel.text = "\(self.sightArray[indexPath[1]].price)"
+            cell.dateLabel.text = ""
+            let rating = self.sightArray[indexPath[1]].rating
+            switch(rating)
+            {
+            case 1:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
+                break
+            case 2:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
+                break
+            case 3:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
+                break
+            case 4:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
+                break
+            case 5:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+            default:
+                cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
+                break
+                
+            }
         }
         
         
