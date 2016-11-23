@@ -125,36 +125,6 @@ class MySingleTripTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TripTableViewCell
         // Configure the cell...
-        /*
-         cell.nameLabel.text = data[indexPath.row].value(forKey: "emailID") as? String
-         cell.tripTitleLabel.text = data[indexPath.row].value(forKey: "tripName") as? String
-         cell.dateLabel.text = (data[indexPath.row].value(forKey: "startDate") as! String) + " - " + (data[indexPath.row].value(forKey: "endDate") as! String)
-         
-         let rating = data[indexPath.row].value(forKey: "tripRating") as! String
-         switch(rating)
-         {
-         case "1":
-         cell.ratingImageView.image = #imageLiteral(resourceName: "oneStar.PNG")
-         break
-         case "2":
-         cell.ratingImageView.image = #imageLiteral(resourceName: "twoStar.PNG")
-         break
-         case "3":
-         cell.ratingImageView.image = #imageLiteral(resourceName: "threeStar.PNG")
-         break
-         case "4":
-         cell.ratingImageView.image = #imageLiteral(resourceName: "fourStar.PNG")
-         break
-         case "5":
-         cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
-         break
-         default:
-         cell.ratingImageView.image = #imageLiteral(resourceName: "fiveStar.PNG")
-         break
-         }
-
-         */
-        
         if(indexPath[0] == 0)
         {
             cell.nameLabel.text = self.lodgeArray[indexPath[1]].name
